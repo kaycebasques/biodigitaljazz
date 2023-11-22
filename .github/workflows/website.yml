@@ -1,4 +1,4 @@
-name: deploy
+name: website
 on:
   workflow_dispatch:
   push:
@@ -9,7 +9,7 @@ permissions:
   pages: write
   id-token: write
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -17,7 +17,7 @@ jobs:
       - name: bootstrap
         run: |
           source ${{github.workspace}}/bootstrap.sh
-      - name: build
+      - name: generate
         run: |
           make html
       - name: pages
@@ -30,7 +30,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
-    needs: bootstrap
+    needs: build
     runs-on: ubuntu-latest
     name: deploy
     steps:

@@ -15,7 +15,3 @@ exclude_patterns = [
     'requirements.txt',
     'venv'
 ]
-
-html_theme = 'alabaster'
-html_static_path = ['_static']
-html_sidebars = {'**': ['globaltoc.html']}

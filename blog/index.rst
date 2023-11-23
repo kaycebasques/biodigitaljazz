@@ -3,7 +3,7 @@
 Blog
 ====
 
-Read yourself a thing
+ABANDON TROPE ALL YE WHO ENTER HERE
 
 .. toctree::
    :maxdepth: 1

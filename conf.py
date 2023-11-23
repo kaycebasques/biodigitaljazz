@@ -15,3 +15,5 @@ exclude_patterns = [
     'requirements.txt',
     'venv'
 ]
+
+html_static_path = ['_static']

@@ -17,3 +17,6 @@ exclude_patterns = [
 ]
 
 html_static_path = ['_static']
+html_extra_path = [
+    'rss.xml'
+]

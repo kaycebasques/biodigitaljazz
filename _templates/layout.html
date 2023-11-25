@@ -10,6 +10,7 @@
             <ul>
                 <li><a href="{{ pathto('index.html', 1) }}">Home</a></li>
                 <li><a href="{{ pathto('blog/index.html', 1) }}">Blog</a></li>
+                <li><a href="{{ pathto('rss.xml', 1) }}">RSS</a></li>
             </ul>
 	</nav>
         {% block body %}{{ body() }}{% endblock %}

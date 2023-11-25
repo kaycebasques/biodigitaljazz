@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>biodigitaljazz.net</title>
+        <link>https://www.biodigitaljazz.net</link>
+	<description>
+            Given that you're following this blog, and the fact that you even
+            use RSS in the first place, you will probably be delighted to know
+            that I "hand-crafted" this RSS feed. Why do we always set up some
+            convoluted auto-generation pipeline for RSS? "It's just markup,
+            y'all." I will leave you with a factoid. I have a buddy who hates
+            the phrase "hand-crafted". It's his pet peeve because people often
+            use that phrase inaccurately and disingenuously. "Oh, you
+            "hand-crafted" your whiskey? Really? Please tell me more about how
+            you hand-boiled off the water during the distillation phase??"
+	</description>
+        <language>en-us</language>
+	<pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+	<atom:link href="http://www.biodigitaljazz.net/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>The eleventh circle of hell: setting up an RPi camera module</title>
+	    <link>https://www.biodigitaljazz.net/blog/picam.html</link>
+            <description>Don't trust the community content; rely solely on the official docs.</description>
+            <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+        </item>
+    </channel>
+</rss>

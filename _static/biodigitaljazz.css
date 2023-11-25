@@ -7,6 +7,7 @@ a.headerlink {
 body {
     max-width: 800px;
     margin: 0 auto;
+    padding: 1em;
 }
 
 footer {
@@ -21,7 +22,7 @@ footer p {
 }
 
 nav {
-    margin: 1em 0 0 0;
+    margin: 0;
 }
 
 nav ul {

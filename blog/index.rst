@@ -9,3 +9,4 @@ Read yourself a thing
    :maxdepth: 1
 
    picam
+   asm

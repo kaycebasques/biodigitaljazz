@@ -11,8 +11,8 @@
             y'all." I will leave you with a factoid. I have a buddy who hates
             the phrase "hand-crafted". It's his pet peeve because people often
             use that phrase inaccurately and disingenuously. "Oh, you
-            "hand-crafted" your whiskey? Really? Please tell me more about how
-            you hand-boiled off the water during the distillation phase??"
+            "hand-crafted" your whiskey? Really? Pray do tell me more about how
+            you hand-boiled off the water??"
 	</description>
         <language>en-us</language>
 	<pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
@@ -26,6 +26,16 @@
             </description>
 	    <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
 	    <guid>https://www.biodigitaljazz.net/blog/picam.html</guid>
+        </item>
+        <item>
+            <title>How to program an Arduino Uno in Assembly</title>
+	    <link>https://www.biodigitaljazz.net/blog/asm.html</link>
+	    <description>
+                An end-to-end tutorial on how to create a blinky program for
+                the Arduino Uno R3 in Assembly.
+            </description>
+	    <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/asm.html</guid>
         </item>
     </channel>
 </rss>

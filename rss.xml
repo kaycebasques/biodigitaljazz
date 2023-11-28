@@ -19,6 +19,15 @@
 	<atom:link href="https://www.biodigitaljazz.net/rss.xml" rel="self"
                 type="application/rss+xml"/>
         <item>
+            <title>Transistor first reported as "Little Brain Cell"</title>
+	    <link>https://www.biodigitaljazz.net/blog/littlebraincell.html</link>
+	    <description>
+                Time magazine's first report on the transistor, back in 1948.
+            </description>
+	    <pubDate>Tues, 28 Nov 2023 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/littlebraincell.html</guid>
+        </item>
+        <item>
             <title>The eleventh circle of hell: setting up an RPi camera module</title>
 	    <link>https://www.biodigitaljazz.net/blog/picam.html</link>
 	    <description>

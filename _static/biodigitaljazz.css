@@ -21,6 +21,10 @@ footer p {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 nav {
     margin: 0;
 }

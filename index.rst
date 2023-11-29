@@ -18,3 +18,4 @@ in the domain name as a form of 90s nostalgia.
    :hidden:
 
    blog/index
+   blogroll

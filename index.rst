@@ -13,6 +13,8 @@ metaphor. Anyways, I wanted the domain for this site to just be
 DNS working so let's just all pretend that I intentionally chose the ``www``
 in the domain name as a form of 90s nostalgia.
 
+`Source code <https://github.com/kaycebasques/biodigitaljazz>`_ for this site
+
 .. toctree::
    :maxdepth: 1
    :hidden:

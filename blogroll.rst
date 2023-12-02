@@ -29,3 +29,4 @@ just fun / cool / inspiring / interesting.
 * `The State Of Silicon And The GPU Poors <https://www.latent.space/p/semianalysis>`_
 * `Interesting GenAI Takes <https://news.ycombinator.com/item?id=38307711>`_
 * `Feynman's Last Blackboard <https://aboatmadeoutoftrash.wordpress.com/2012/01/19/feynmans-last-blackboard/>`_
+* `Code Is Run More Than Read <https://olano.dev/2023-11-30-code-is-run-more-than-read/>`_

@@ -21,6 +21,15 @@ footer p {
     padding: 0;
 }
 
+footer pre {
+    width: max-content;
+    margin: 0 auto;
+}
+
+footer pre code {
+    font-family: monospace;
+}
+
 img {
     max-width: 100%;
 }
@@ -29,12 +38,12 @@ nav {
     margin: 0;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
 nav li {
     display: inline;
     margin-right: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }

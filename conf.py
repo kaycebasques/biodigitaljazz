@@ -1,5 +1,5 @@
 project = 'biodigitaljazz'
-copyright = '2023, Kayce Basques'
+copyright = '2024, Kayce Basques'
 author = 'Kayce Basques'
 release = '0.0.0'
 

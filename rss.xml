@@ -15,6 +15,15 @@
 	<atom:link href="https://www.biodigitaljazz.net/rss.xml" rel="self"
                 type="application/rss+xml"/>
         <item>
+            <title>Books about systems</title>
+	    <link>https://www.biodigitaljazz.net/blog/systems.html</link>
+	    <description>
+                A list of books related to systems.
+            </description>
+	    <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/systems.html</guid>
+        </item>
+        <item>
             <title>Transistor first reported as "Little Brain Cell"</title>
 	    <link>https://www.biodigitaljazz.net/blog/littlebraincell.html</link>
 	    <description>

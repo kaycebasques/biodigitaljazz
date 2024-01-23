@@ -3,11 +3,14 @@
 Blog
 ====
 
-Read yourself a thing
+Read yourself a thing on this here blog
 
 .. toctree::
    :maxdepth: 1
 
-   littlebraincell
-   picam
    asm
+   picam
+   www
+   littlebraincell
+   systems
+   systemantics

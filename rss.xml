@@ -5,17 +5,13 @@
         <link>https://www.biodigitaljazz.net</link>
 	<description>
             Given that you're following this blog, and the fact that you even
-            use RSS in the first place, you will probably be delighted to know
-            that I "hand-crafted" this RSS feed. Why do we always set up some
-            convoluted auto-generation pipeline for RSS? "It's just markup,
-            y'all." I will leave you with a factoid. I have a buddy who hates
-            the phrase "hand-crafted". It's his pet peeve because people often
-            use that phrase inaccurately and disingenuously. "Oh, you
-            "hand-crafted" your whiskey? Really? Pray do tell me more about how
-            you hand-boiled off the water??"
+            use RSS in the first place, you may be intrigued to know that I
+            "hand-crafted" this RSS feed. Why do we always set up some
+            convoluted auto-generation pipeline for RSS? "It's just text files,
+            y'all."
 	</description>
         <language>en-us</language>
-	<pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+	<pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
 	<atom:link href="https://www.biodigitaljazz.net/rss.xml" rel="self"
                 type="application/rss+xml"/>
         <item>
@@ -26,6 +22,15 @@
             </description>
 	    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
 	    <guid>https://www.biodigitaljazz.net/blog/littlebraincell.html</guid>
+        </item>
+        <item>
+            <title>The "www" in www.biodigitaljazz.net</title>
+	    <link>https://www.biodigitaljazz.net/blog/www.html</link>
+	    <description>
+                Ramblings about this site's use of "www".
+            </description>
+	    <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/www.html</guid>
         </item>
         <item>
             <title>The eleventh circle of hell: setting up an RPi camera module</title>

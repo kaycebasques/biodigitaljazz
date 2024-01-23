@@ -29,3 +29,5 @@ gems of the world wide web written by not-me
 * `Interesting GenAI Takes <https://news.ycombinator.com/item?id=38307711>`_
 * `Feynman's Last Blackboard <https://aboatmadeoutoftrash.wordpress.com/2012/01/19/feynmans-last-blackboard/>`_
 * `Code Is Run More Than Read <https://olano.dev/2023-11-30-code-is-run-more-than-read/>`_
+* `The purpose of a system is what it does <https://en.wikipedia.org/wiki/The_purpose_of_a_system_is_what_it_does>`_
+* `What is cybernetics? <https://youtu.be/uOj3Brkd_DE?t=772>`_

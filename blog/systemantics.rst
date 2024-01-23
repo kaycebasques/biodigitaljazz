@@ -6,26 +6,17 @@ Axioms of Systemantics
 
 *2024 Jan 23*
 
-TODO: Explain `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__
+TODO: Add to RSS when finished
 
-TODO: Add this page to the RSS when it's done
+`Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__ is a book about
+why systems fail. Below is a summary of the book's axioms.
 
-----------------------------------------------
-*Systems In General Work Poorly Or Not At All*
-----------------------------------------------
+**Systems In General Work Poorly Or Not At All**.
 
--------------------------------
-*New Systems Mean New Problems*
--------------------------------
+**New Systems Mean New Problems**.
 
-------------------------------------------
-*Systems Operate By Redistributing Anergy*
-------------------------------------------
+**Systems Operate By Redistributing Anergy**.
 
----------------------------------------------------
-*Systems Tend To Expand To Fill The Known Universe*
----------------------------------------------------
+**Systems Tend To Expand To Fill The Known Universe**.
 
-----------------------------------------------
-*A System Will Behave As It Damn Well Pleases*
-----------------------------------------------
+**The Behavior Of Complex Systems Is Unpredictable**.

@@ -1,11 +1,10 @@
 .. _blogroll:
 
+========
 Blogroll
 ========
 
-The links below are some of the gems of the web that I've found over the years.
-Some of them contain timeless {soft,hard,wet}ware hacking wisdom, others are
-just fun / cool / inspiring / interesting.
+gems of the world wide web written by not-me
 
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_

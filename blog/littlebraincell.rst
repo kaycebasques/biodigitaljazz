@@ -1,5 +1,6 @@
 .. _littlebraincell:
 
+================================================
 Transistor first reported as "Little Brain Cell"
 ================================================
 
@@ -11,14 +12,13 @@ Transistor first reported as "Little Brain Cell"
 
 Last week I listened to the Latent Space `interview`_ with "That
 SemiAnalysis Guy". His name is Dylan Patel but I'm going to keep calling him
-That SemiAnalysis Guy because it tickles my brain for some reason.
-The interview was great! It motivated me to finally learn more about the
-hardware industry. At the end of the interview That SemiAnalysis Guy
-recommends `Chip War`_ by Chris Miller, who will hereby be called "That Chip War
-Guy". The book was on my radar but I never got around to reading it because I
-was pretty turned off by the clickbaity title. I'm only 50 pages in but it
-seems like the book is just a well-researched history of the semiconductor
-industry...?
+That SemiAnalysis Guy because it tickles my brain. The interview was great! It
+motivated me to finally learn more about the hardware industry. At the end of
+the interview That SemiAnalysis Guy recommends `Chip War`_ by Chris Miller, who
+will hereby be called "That Chip War Guy". The book was on my radar but I never
+got around to reading it because I was pretty turned off by the clickbaity
+title. I'm only 50 pages in but it seems like the book is just a
+well-researched history of the semiconductor industry...?
 
 I love it when historians mention their primary sources. That Chip War Guy
 mentions some of the earliest reporting on the transistor, back in 1948:
@@ -69,17 +69,9 @@ save you a click and reproduce it here in full:
 It's fascinating to me that we were thinking of this stuff as "electronic
 nervous systems" and "little brain cells" from the `git-go`_.
 
-(I just looked up the etymology of "get-go" and found that original "git-go"
-spelling. Someone in the git community should totally create some kind of git
-tool in Go and call it git-go.)
-
 .. _scan: https://time.com/vault/issue/1948-07-12/page/56/
 
 I was also able to find a `scan`_ of the magazine. The web is a vast treasure
 trove of historical content.
 
 .. image:: littlebraincell.png
-
-P.S. I also learned from That Chip War Guy that vacuum-tube-powered missiles
-and bombs were comically inaccurate. "Comical" isn't the right word because
-we're talking about war, but you get the idea. A post for another day, perhaps.

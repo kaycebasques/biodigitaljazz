@@ -1,5 +1,6 @@
 .. _picam:
 
+============================================================
 The eleventh circle of hell: setting up an RPi camera module
 ============================================================
 
@@ -12,7 +13,10 @@ docs. And make sure that whatever you're reading was written for the
 specific HW/SW permutation that you're using. In my case (RPi4 + RPi OS
 Bookworm + RPi Camera Module 3) the correct doc is `The Picamera2 Library`_. 
 
-Once I found the right doc it was trivial to get everything working. The ``picamera2`` repo has an extensive collection of examples. It's downright magical that I can get started with computer vision in a matter of minutes. OpenCV is really cool stuff.
+Once I found the right doc it was trivial to get everything working. The
+``picamera2`` repo has an extensive collection of examples. It's downright
+magical that I can get started with computer vision in a matter of minutes.
+OpenCV is really cool stuff.
 
 This gem of a `quote`_ from an RPi engineer sums up the situation:
 

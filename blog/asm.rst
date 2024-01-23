@@ -47,8 +47,8 @@ Create the repository
    touch ~/uno/blink.asm
    touch ~/uno/Makefile
 
-Install avra
-============
+Install ``avra``
+================
 
 .. code-block:: console
 
@@ -58,8 +58,8 @@ Install avra
 
 ``avra`` (AVR Assembler) will be your `assembler`_.
 
-Install avrdude
-===============
+Install ``avrdude``
+===================
 
 .. code-block::
 
@@ -76,8 +76,8 @@ Create the assembly program
 
 Copy-paste the following code into each respective file.
 
-~/uno/blink.asm
-===============
+``~/uno/blink.asm``
+===================
 
 
 .. code-block::
@@ -153,8 +153,8 @@ Resources for figuring out how the ``blink.asm`` code works:
   is a comprehensive, approachable, and delightfully old school walkthrough
   of AVR Assembly programming
 
-~/uno/Makefile
-==============
+``~/uno/Makefile``
+==================
 
 .. code-block:: make
 

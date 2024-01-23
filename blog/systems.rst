@@ -4,6 +4,8 @@
 Books about systems
 ===================
 
+TODO: Add this page to the RSS when it's done
+
 *2024 Jan 23*
 
 * `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`_

@@ -8,6 +8,8 @@ Axioms of Systemantics
 
 TODO: Explain `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__
 
+TODO: Add this page to the RSS when it's done
+
 ----------------------------------------------
 *Systems In General Work Poorly Or Not At All*
 ----------------------------------------------

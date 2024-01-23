@@ -10,6 +10,7 @@ Read yourself a thing on this here blog
    :maxdepth: 1
 
    asm
+   ancestors
    picam
    www
    littlebraincell

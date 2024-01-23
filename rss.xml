@@ -51,5 +51,15 @@
 	    <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
 	    <guid>https://www.biodigitaljazz.net/blog/asm.html</guid>
         </item>
+        <item>
+            <title>You have thousands of ancestors from the 1500s</title>
+	    <link>https://www.biodigitaljazz.net/blog/ancestors.html</link>
+	    <description>
+                The math is a bit fuzzy but one thing is for certain: you've
+                got a lot of ancestors.
+            </description>
+	    <pubDate>Mon, 4 Sep 2023 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/ancestors.html</guid>
+        </item>
     </channel>
 </rss>

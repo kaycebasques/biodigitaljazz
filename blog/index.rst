@@ -4,7 +4,7 @@
 Blog
 ====
 
-Read yourself a thing on this here blog
+Read yourself a thing on this here weblog
 
 .. toctree::
    :maxdepth: 1

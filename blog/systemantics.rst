@@ -22,3 +22,5 @@ why systems fail. Below is a summary of the book's axioms.
 **The Behavior Of Complex Systems Is Unpredictable**.
 
 **Systems Tend To Oppose Their Own Proper Functions**.
+
+**People In Systems Do Not Do What The System Says They Are Doing**.

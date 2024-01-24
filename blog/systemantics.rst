@@ -20,3 +20,5 @@ why systems fail. Below is a summary of the book's axioms.
 **Systems Tend To Expand To Fill The Known Universe**.
 
 **The Behavior Of Complex Systems Is Unpredictable**.
+
+**Systems Tend To Oppose Their Own Proper Functions**.

@@ -24,3 +24,5 @@ why systems fail. Below is a summary of the book's axioms.
 **Systems Tend To Oppose Their Own Proper Functions**.
 
 **People In Systems Do Not Do What The System Says They Are Doing**.
+
+**The System Itself Does Not Do What It Says It Is Doing**.

@@ -10,8 +10,8 @@ Axioms of Systemantics
 book by John Gall with some interesting ideas about why systems fail. Below is
 a summary of the book's axioms.
 
-(The sentences in bold are mostly verbatim from the book; I edited a few. The
-other sentences are my own notes about each item.)
+(The sentences in bold are mostly verbatim from the book; I edited a few.
+Sentences in quotes are also from the book. Everything else is my own.)
 
 **Systems In General Work Poorly Or Not At All**. There is no single, hidden
 defect that's preventing your complex system from working; failure to function
@@ -70,39 +70,71 @@ one place to another that would be cheap, easy, convenient, safe, and fast."
 **The Real World Is Whatever Is Reported To The System**. "People in systems
 are never dealing with the real world that the rest of us have to live in but
 with a filtered, distorted, and censored version which is all that can get past
-the sensory organs of the system itself." CEOs.
+the sensory organs of the system itself."
 
 **For Every Human System, There Is A Type Of Person Adapted To Thrive On It**.
+There are some attributes that are probably necessary for survival in any
+system, but each system has some uniqueness in the sense that it attracts
+different traits. It's hard to tell what traits any given system attracts. The
+traits do not necessarily align with successful operation of the system itself
+e.g. the qualities for being elected president don't necessarily align with the
+ability to run the country effectively. Systems not only attract people who
+will succeed within the system but also people with parasitic traits that
+thrive at the expense of the system. "Efforts to remove parasitic
+Systems-people by means of screening committees, review boards, and competency
+examinations merely generate new job categories for such people to occupy."
 
 **The Bigger The System, The Narrower And More Specialized The Interface
-With Individuals**.
+With Individuals**. To the US tax system, the concept of a social security
+number is (probably) more important than the concept of a person.
 
-**A Complex System Cannot Be "Made" To Work**.
+**A Complex System Cannot Be "Made" To Work**. Attempting "a good swift kick"
+may improve functioning for a moment but usually results in total
+nonfunctioning.
 
 **A Simple System, Designed From Scratch, Sometimes Works**.
 
 **Some Complex Systems Actually Work**.
 
 **A Complex System That Works Is Invariably Found To Have Evolved From A
-Simple System That Works**.
+Simple System That Works**. "The mechanism by which the transition from
+*working simply system* to *working complex system* takes place is not known.
+Few areas offer greater potential reward for truly first-rate research."
 
-**A Complex System Designed From Scratch Never Works**.
+**A Complex System Designed From Scratch Never Works**. The League Of Nations.
 
 **In Complex Systems, Malfunction And Total Nonfunction May Not Be Detectable
-For Long Periods, If Ever**.
+For Long Periods, If Ever**. "It would seem reasonable to suppose that...
+governments in which all power is concentrated in the will of one man would
+require as a minimum for the adequate functioning of those governments, that
+the will of the despot be intact. Nevertheless, the list of absolute monarchs
+who were hopelessly incompotent, even insane, is surprisingly long. They ruled
+with utter caprice... for decades on end, and the net result to their countries
+was---undetectably different from the rule of the wisest kings."
 
-**Large Complex Systems Are Beyond Human Capacity To Evaluate**.
+**Large Complex Systems Are Beyond Human Capacity To Evaluate**. It's difficult
+to know what a large, complex system is doing, and therefore it's difficult to
+judge it as a success or failure.
 
-**A System Continues To Do Its Thing, Regardless Of Need**.
+.. _Selective Service System: https://www.sss.gov/register/why-is-selective-service-important/
+
+**A System Continues To Do Its Thing, Regardless Of Need**. The
+`Selective Service System`_ continues to require all 18-year-old male US
+citizens to register for the draft, even though the US hasn't had a draft
+in 51 years.
 
 **Systems Develop Goals Of Their Own**.
 
 **Intrasystem Goals Come First**.
 
-**Complex Systems Usually Operate In Failure Mode**.
+**Complex Systems Usually Operate In Failure Mode**. Poke around any complex
+system and will you find sub-systems that seem to solve a particular problem
+but on closer investigation are found to not actually be working.
 
 **The Mode Of Failure From A Complex System Cannot Ordinarily Be Predicted
-From Its Structure**.
+From Its Structure**. When you go back and trace the actual financial
+mechanisms that failed in the 2008 and 2020 financial crises... it gets pretty
+weird.
 
 **The Crucial Variables Are Discovered By Accident**.
 
@@ -114,11 +146,17 @@ Systems To Which The System Is Connected**.
 **When A Fail-Safe System Fails, It Fails By Failing To Fail Safe**.
 
 **Complex Systems Tend To Produce Complex Responses (Not Solutions) To
-Problems**.
+Problems**. 
 
 **Great Advances Are Not Produced By Systems Designed To Produce Great
-Advances**.
+Advances**. "A system that is sufficiently large, complex, and ambitious can
+reduce output far below "random" levels. Thus, a federal Program to conquer
+cancer may tie up all the competent researchers in the field, leaving the
+problem to be solved by someone else, typically a graduate student from the
+University of Tasmania doing a little recreational entomology on his vacation.
+*Solutions usually come from people who see in the problem only an interesting
+puzzle, and whose qualifications would never satisfy a select committee.*"
 
-**Systems Run Better When Designed To Run Downhill**.
+**Systems Opposing Human Motivation Work Poorly Or Not At All**.
 
 **Loose Systems Last Longer And Work Better**.

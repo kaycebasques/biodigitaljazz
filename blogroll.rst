@@ -4,7 +4,7 @@
 Blogroll
 ========
 
-gems of the world wide web written by not-me
+Gems of the world wide web written by not-me
 
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_

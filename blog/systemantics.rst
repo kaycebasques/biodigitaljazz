@@ -7,26 +7,70 @@ Axioms of Systemantics
 *2024 Jan 25*
 
 `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__ is a silly little
-book with some interesting ideas about why systems fail. Below is a summary of
-the book's `axioms <https://www.etymonline.com/word/axiom>`_.
+book by John Gall with some interesting ideas about why systems fail. Below is
+a summary of the book's axioms.
 
-**Systems In General Work Poorly Or Not At All**.
+(The sentences in bold are mostly verbatim from the book; I edited a few. The
+other sentences are my own notes about each item.)
 
-**New Systems Mean New Problems**.
+**Systems In General Work Poorly Or Not At All**. There is no single, hidden
+defect that's preventing your complex system from working; failure to function
+as expected is an intrinsic feature of complex systems. In the beginning the
+Universe was created. This has made a lot of people very angry and been widely
+regarded as a bad move.
 
-**Systems Operate By Redistributing Anergy**.
+**New Systems Mean New Problems**. Back when I was content lead for
+`web.dev <https://web.dev>`_ I set up an automated form to take in new content
+proposals. The automation itself would break. Some teammates were unhappy with
+the new bureaucracy. When I left that role ownership of the automated form
+didn't transfer correctly. Etc.
 
-**Systems Tend To Grow And Encroach**.
+.. _clonal anergy: https://en.wikipedia.org/wiki/Clonal_anergy
+.. _The Macro Tourist: https://markethuddle.com/welcome/episodes/
 
-**Complicated Systems Produce Unexpected Outcomes**.
+**The Total Amount Of Anergy In The Universe Is Constant**. Gall defines anergy
+as the negative of energy. See also `clonal anergy`_. "The sum total of
+problems facing the community has not changed. They have merely changed their
+form and relative importance." I've heard `The Macro Tourist`_ talk about risk
+in similar terms.
 
-**Complex Systems Tend To Oppose Their Own Proper Function**.
+**Systems Tend To Grow And Encroach**. "A striking example is the
+"do-it-yourself" movement, instigated by managers of mass production in the
+world to *make the consumer do some of the work the system is supposed to do*.
+The consumer is encouraged to do the work of assembling the parts of the
+product he has bought on the bizarre grounds that it "saves so much work and
+expense". Several hours later, the exasperated purchaser may recall that the
+system of mass production was set up in the first place because such functions
+can be more cheaply and rapidly done under factory conditions."
 
-**People In Systems Do Not Do What The System Says They Are Doing**.
+**Complicated Systems Produce Unexpected Outcomes**. DDT was introduced to
+improve crop yield and control disease and ended up dangerously thinning out
+the shells of Bald Eagles.
 
-**The System Itself Does Not Do What It Says It Is Doing**.
+**Complex Systems Tend To Oppose Their Own Proper Function**. My favorite
+axiom. Your city has a problem with trash building up on the streets so it
+sets up a waste management company. The company starts out by collecting trash
+daily, but then they shift to a Tuesday-only schedule. Next, you get a notice
+saying that the company will no longer service your building unless you buy
+their standardized garbage cans (to ensure that the robotic arms on their
+trucks can pick them up). Eventually, the waste management union goes on strike
+and the trash starts piling up on the street again anyways.
 
-**The Real World Is Whatever Is Reported To The System**.
+**People In Systems Do Not Do What The System Says They Are Doing**. The
+stated purpose of a king is to rule a country, but in reality they spend a lot
+of time fighting off usurpers.
+
+**The System Itself Does Not Do What It Says It Is Doing**. "*Example 1*.
+Doesn't the auto industry supply us with millions of new cars each year, even
+tailoring them to our changing tastes in style and performance? *Answer*. The
+reason we think the auto industry is meeting our needs is that we have almost
+completely forgotten what we originally wanted, namely, a means of going from
+one place to another that would be cheap, easy, convenient, safe, and fast."
+
+**The Real World Is Whatever Is Reported To The System**. "People in systems
+are never dealing with the real world that the rest of us have to live in but
+with a filtered, distorted, and censored version which is all that can get past
+the sensory organs of the system itself." CEOs.
 
 **For Every Human System, There Is A Type Of Person Adapted To Thrive On It**.
 

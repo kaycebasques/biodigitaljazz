@@ -11,9 +11,19 @@
             y'all."
 	</description>
         <language>en-us</language>
-	<pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+	<pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
 	<atom:link href="https://www.biodigitaljazz.net/rss.xml" rel="self"
                 type="application/rss+xml"/>
+        <item>
+            <title>Axioms of Systemantics</title>
+	    <link>https://www.biodigitaljazz.net/blog/systemantics.html</link>
+	    <description>
+                Systemantics is a silly little book by John Gall with some
+                interesting ideas about why systems fail.
+            </description>
+	    <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+	    <guid>https://www.biodigitaljazz.net/blog/systemantics.html</guid>
+        </item>
         <item>
             <title>Books about systems</title>
 	    <link>https://www.biodigitaljazz.net/blog/systems.html</link>

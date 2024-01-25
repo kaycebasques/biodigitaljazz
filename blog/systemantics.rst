@@ -85,8 +85,8 @@ Systems-people by means of screening committees, review boards, and competency
 examinations merely generate new job categories for such people to occupy."
 
 **The Bigger The System, The Narrower And More Specialized The Interface
-With Individuals**. To the US tax system, the concept of a social security
-number is (probably) more important than the concept of a person.
+With Individuals**. To the US tax system, the concept of "social security
+number" is (probably) more important than the concept of "person".
 
 **A Complex System Cannot Be "Made" To Work**. Attempting "a good swift kick"
 may improve functioning for a moment but usually results in total
@@ -98,7 +98,7 @@ nonfunctioning.
 
 **A Complex System That Works Is Invariably Found To Have Evolved From A
 Simple System That Works**. "The mechanism by which the transition from
-*working simply system* to *working complex system* takes place is not known.
+*working simple system* to *working complex system* takes place is not known.
 Few areas offer greater potential reward for truly first-rate research."
 
 **A Complex System Designed From Scratch Never Works**. The League Of Nations.

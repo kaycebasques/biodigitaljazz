@@ -7,7 +7,7 @@ Axioms of Systemantics - how systems work and why they fail
 *2024 Jan 25*
 
 `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__ is a silly little
-book by John Gall with some interesting ideas about why systems fail. Below is
+book by John Gall with some interesting ideas about how systems (barely) work and why they fail. Below is
 a summary of the book's axioms.
 
 (The sentences in bold are mostly verbatim from the book; I edited a few.

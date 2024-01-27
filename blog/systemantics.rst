@@ -1,8 +1,8 @@
 .. _systemantics:
 
-======================
-Axioms of Systemantics
-======================
+==========================================================
+Axioms of Systemantics - how systems work and why they fail
+==========================================================
 
 *2024 Jan 25*
 

@@ -15,6 +15,7 @@ exclude_patterns = [
     'requirements.txt',
     'venv'
 ]
+pygments_style = 'sphinx'
 
 html_static_path = ['_static']
 html_extra_path = [

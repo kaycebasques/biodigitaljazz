@@ -15,3 +15,4 @@ Blog
    systems
    systemantics
    STTTGTS
+   archetypes

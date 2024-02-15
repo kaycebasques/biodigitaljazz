@@ -6,8 +6,8 @@ Home
 .. _Kayce Basques: https://kayce.basqu.es
 .. _hacker: http://www.catb.org/jargon/html/H/hacker.html
 
-Adventures in {hard,soft,wet}ware by `Kayce Basques`_. My :ref:`blog` for
-`third culture`_ and `hacker`_ stuff in other words.
+Adventures in {hard,soft,wet}ware by `Kayce Basques`_. My :ref:`blog <blog>`
+for `third culture`_ and `hacker`_ stuff in other words.
 
 .. toctree::
    :maxdepth: 1

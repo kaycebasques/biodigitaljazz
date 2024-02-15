@@ -1,10 +1,17 @@
-.. _blogroll:
+.. _bookmarks:
 
-========
-Blogroll
-========
+=========
+Bookmarks
+=========
 
-Gems of the world wide web written by not-me
+.. _the third culture: https://www.edge.org/conversation/kevin_kelly-the-third-culture
+.. _hacker culture: http://www.catb.org/jargon/html/H/hacker.html
+
+Browsers suck at bookmarks. Heck 'em, I'll just store my bookmarks publicly on
+this webpage. There's nothing private or sensitive here, and you might also
+enjoy this stuff. The only rule for this particular set of bookmarks is that
+it's gotta be related to `hacker culture`_, `the third culture`_, or becoming a
+better hacker in general.
 
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_
@@ -24,7 +31,6 @@ Gems of the world wide web written by not-me
 * `Seat Racing <https://news.ycombinator.com/item?id=37364919>`_
 * `Origin Of "The Future Has Already Arrived... It's Just Not Evenly Distributed Yet" <https://quoteinvestigator.com/2012/01/24/future-has-arrived/>`_
 * `Astronomy Picture Of The Day <https://apod.nasa.gov/apod/archivepix.html>`_
-* `Trust Arrives On Foot And Leaves On Horseback <https://news.ycombinator.com/item?id=37649699>`_
 * `The State Of Silicon And The GPU Poors <https://www.latent.space/p/semianalysis>`_
 * `Interesting GenAI Takes <https://news.ycombinator.com/item?id=38307711>`_
 * `Feynman's Last Blackboard <https://aboatmadeoutoftrash.wordpress.com/2012/01/19/feynmans-last-blackboard/>`_

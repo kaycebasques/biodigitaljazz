@@ -37,3 +37,4 @@ better hacker in general.
 * `Code Is Run More Than Read <https://olano.dev/2023-11-30-code-is-run-more-than-read/>`_
 * `The Purpose Of A System Is What It Does <https://en.wikipedia.org/wiki/The_purpose_of_a_system_is_what_it_does>`_
 * `Tron Wiki: The Dude <https://web.archive.org/web/20240124001923/https://tron.fandom.com/wiki/Tron_Wiki:The_Dude>`_
+* `Three Virtues <https://thethreevirtues.com/>`_

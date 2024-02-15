@@ -10,6 +10,10 @@ body {
     padding: 1em;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 div.highlight {
     background-color: lightgrey;
     margin: 1em 0 0 0;

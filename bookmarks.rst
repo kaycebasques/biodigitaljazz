@@ -5,13 +5,14 @@ Bookmarks
 =========
 
 .. _the third culture: https://www.edge.org/conversation/kevin_kelly-the-third-culture
-.. _hacker culture: http://www.catb.org/jargon/html/H/hacker.html
+.. _hacking: http://www.catb.org/jargon/html/H/hacker.html
 
 Browsers suck at bookmarks. Heck 'em, I'll just store my bookmarks publicly on
 this webpage. There's nothing private or sensitive here, and you might also
-enjoy this stuff. The only rule for this particular set of bookmarks is that
-it's gotta be related to `hacker culture`_, `the third culture`_, or becoming a
-better hacker in general.
+enjoy this stuff. And I'll be able to access my bookmarks from any computer
+that's connected to the World Wide Web. The only rule for this particular set
+of bookmarks is that it's gotta be related to `hacking`_ or
+`the third culture`_.
 
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_
@@ -38,3 +39,4 @@ better hacker in general.
 * `The Purpose Of A System Is What It Does <https://en.wikipedia.org/wiki/The_purpose_of_a_system_is_what_it_does>`_
 * `Tron Wiki: The Dude <https://web.archive.org/web/20240124001923/https://tron.fandom.com/wiki/Tron_Wiki:The_Dude>`_
 * `Three Virtues <https://thethreevirtues.com/>`_
+* `Institutions Try To Preserve The Problem To Which They Are The Solution <https://effectiviology.com/shirky-principle/>`_

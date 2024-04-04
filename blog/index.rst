@@ -16,3 +16,4 @@ Blog
    systemantics
    STTTGTS
    archetypes
+   goodreads

@@ -13,7 +13,8 @@ exclude_patterns = [
     '_build',
     'boostrap.sh',
     'requirements.txt',
-    'venv'
+    'venv',
+    'openbsd.txt'
 ]
 pygments_style = 'sphinx'
 

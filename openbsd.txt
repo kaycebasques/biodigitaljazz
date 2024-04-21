@@ -1,0 +1,25 @@
+download the arm64 install75.img file:
+https://www.openbsd.org/faq/faq4.html#Download
+
+use balena etcher to flash install75.img to MicroSD
+
+UART connection to RPi
+
+GND to pin 6
+RPi TX to pin 8 (laptop receives data from RPi over this line)
+RPi RX to pin 10 (laptop sends data to RPi over this line)
+
+minicom -s
+serial port setup
+
+A - serial device = /dev/ttyUSB0 (for me)
+E - Bps/Par/Bits = 115200 8N1
+F - hardware flow control = no (TX from laptop to RPi won't work if this is wrong)
+G - software flow control = no (probably also important)
+(press enter to exit that screen)
+select Exit to finish setup and go to main minicom screen
+
+
+there's openbsd info here but it was TMI for me
+https://ftp.openbsd.org/pub/OpenBSD/7.5/arm64/INSTALL.arm64
+https://www.openbsd.org/faq/faq4.html#Install

@@ -5,9 +5,9 @@ use balena etcher to flash install75.img to MicroSD
 
 UART connection to RPi
 
-GND to pin 6
-RPi TX to pin 8 (laptop receives data from RPi over this line)
-RPi RX to pin 10 (laptop sends data to RPi over this line)
+GND to pin 6, black wire
+RPi TX to pin 8 (laptop receives data from RPi over this line), white wire
+RPi RX to pin 10 (laptop sends data to RPi over this line), green wire
 
 minicom -s
 serial port setup

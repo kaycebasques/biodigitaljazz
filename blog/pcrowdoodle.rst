@@ -26,13 +26,13 @@ questionable Raspberry Pi "laptop".
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi4.jpg
 
+--------
+"laptop"
+--------
 .. _CrowPi-L: https://web.archive.org/web/20240426205124/https://www.elecrow.com/crowpi-l-real-raspberry-pi-laptop-for-learning-programming-and-hardware.html
 
 .. _pCrowDoodle my beloved: https://raw.githubusercontent.com/kaycebasques/media/main/gif/pcrowdoodle.gif
 
---------
-"laptop"
---------
 The official name of this product is `CrowPi-L`_ but mine only answers to the
 moniker of `pCrowDoodle my beloved`_.
 
@@ -51,8 +51,8 @@ You just lift the magnetically attached (??) back cover...
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi10.jpg
 
-...and your basically ready to fire pCrowDoodle up and realize that the boot
-firmware is surely impossible to update and probably backdoor'd:
+...and you're basically ready to fire pCrowDoodle up and realize that there's
+some boot firmware that's surely impossible to update and maybe backdoor'd:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi5.jpg
 

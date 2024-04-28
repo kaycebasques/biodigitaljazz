@@ -18,8 +18,8 @@ should I bring?
 * I don't have a lightweight personal laptop that's enjoyable to goof around
   on.
 
-The solution for me, an irrational simpleton, was to spend perhaps much money
-($200) on a highly questionable Raspberry Pi "laptop".
+The solution for me, an irrational simpleton, was to spend perhaps too much
+money ($200) on a questionable Raspberry Pi "laptop".
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi4.jpg
 
@@ -129,8 +129,7 @@ Battery
 -------
 
 I got 3-5 hours on the first full charge. I fully expect this to drop down
-to 30 minutes after a month. My coworker had the good idea of using a
-cellphone power bank as a backup.
+to 30 minutes after a month.
 
 An interesting challenge (maybe project?) is that the RPi OS UI doesn't
 seem to expect to run off battery so there's no "low battery" indicator.
@@ -156,7 +155,7 @@ RPi OS is a sweet spot for exploratory hacking IMO:
 * It comes pre-loaded with lots of interesting stuff
   (``for name in $(ls /usr/bin); do man -f $name; done``)
 * It's the same ecosystem of tools/programs/etc. as my work env
-  (I <3 Debian)
+  <3 Debian
 * The RPi hardware itself really invites you to learn about it
   on a deeper level. Have you seen those datasheets? Delightful
 
@@ -169,5 +168,5 @@ reliability; if this thing starts crashing or the keys start sticking then
 I'm screwed.
 
 At first I thought $200 was too expensive but realistically, it would cost
-me much more than $200 in time/energy/parts to try to build something like
-this myself.
+me much more than $200 in time/energy/parts/hairline to try to build something
+like this myself.

@@ -18,8 +18,8 @@ should I bring?
 * I don't have a lightweight personal laptop that's enjoyable to goof around
   on.
 
-The solution for me, an irrational simpleton, was to spend too much money
-on a highly questionable Raspberry Pi "laptop".
+The solution for me, an irrational simpleton, was to spend perhaps much money
+($200) on a highly questionable Raspberry Pi "laptop".
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi4.jpg
 
@@ -56,6 +56,8 @@ some boot firmware that's impossible to update at best and backdoor'd at worst:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi5.jpg
 
+I'm using RPi 4. I have a hunch RPi5 won't work.
+
 ---------------------
 Form factor: wedgebot
 ---------------------
@@ -82,9 +84,6 @@ pcrowDoodle came with a little SD expansion thingy that lets you switch
 between an "A" SD card and a "B" SD card fairly quickly:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi8.jpg
-
-I'm tempted to flip it while my RPi is running just to learn how much or little
-damage that does...
 
 RPi OS booted up pretty much without a hitch:
 
@@ -149,10 +148,26 @@ Where have all the RPi laptops gone
 I've poked fun at Elecrow (the maker of the CrowPi-L) a few times but
 it seems like they deserve my thanks and respect: "RPi laptop" is a
 cool idea and they seem to be one of only a handful of companies actually
-making it happen.
+making it happen.'
+
+RPi OS is a sweet spot for exploratory hacking IMO:
+
+* It's trivial to set up on an SD card
+* It comes pre-loaded with lots of interesting stuff
+  (``for name in $(ls /usr/bin); do man -f $name; done``)
+* It's the same ecosystem of tools/programs/etc. as my work env
+  (I <3 Debian)
+* The RPi hardware itself really invites you to learn about it
+  on a deeper level. Have you seen those datasheets? Delightful
 
 ---------
 Worth it?
 ---------
 
-Too soon to tell. I'll report back in a month.
+Too soon to tell. I'll report back after Japan. It will boil down to
+reliability; if this thing starts crashing or the keys start sticking then
+I'm screwed.
+
+At first I thought $200 was too expensive but realistically, it would cost
+me much more than $200 in time/energy/parts to try to build something like
+this myself.

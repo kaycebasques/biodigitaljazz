@@ -7,12 +7,7 @@ Bookmarks
 .. _the third culture: https://www.edge.org/conversation/kevin_kelly-the-third-culture
 .. _hacking: http://www.catb.org/jargon/html/H/hacker.html
 
-Browsers suck at bookmarks. Heck 'em, I'll just store my bookmarks publicly on
-this webpage. There's nothing private or sensitive here, and you might also
-enjoy this stuff. And I'll be able to access my bookmarks from any computer
-that's connected to the World Wide Web. The only rule for this particular set
-of bookmarks is that it's gotta be related to `hacking`_ or
-`the third culture`_.
+My bookmarks related to `hacking`_ or `the third culture`_
 
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_

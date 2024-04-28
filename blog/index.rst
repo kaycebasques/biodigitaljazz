@@ -4,6 +4,8 @@
 Blog
 ====
 
+Read you a thing
+
 .. toctree::
    :maxdepth: 1
 

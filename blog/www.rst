@@ -15,3 +15,5 @@ Anyways, I wanted the domain for this site to just be
 ``https://biodigitaljazz.net`` but I couldn't figure out how to get the DNS
 working. So let's all just pretend that I intentionally chose the ``www`` in
 the domain name as a form of 90s nostalgia.
+
+(Edit: I figured out how to get the naked domain working.)

@@ -94,7 +94,7 @@ And I even got OpenBSD working on the other SD!
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi9.jpg
 
-Pretty excited to finally try out a BSD distro. Gonna leave it GUI-free.
+Pretty excited to finally try out BSD. Gonna leave it GUI-free.
 
 -----------------------------------------
 Unusable trackpad: a blessing in disguise
@@ -109,7 +109,7 @@ actually... I've been meaning to get really solid at keyboard-based
 navigation. This is the main "desirable difficulty" thing for me.
 A cool side-effect of forcing myself to get good at keyboard-based
 navigation is that I'm also learning the CLI-equivalent for common actions,
-such as `dm-tool lock` to lock the screen.
+such as ``dm-tool lock`` to lock the screen.
 
 `Lobsters <https://lobste.rs>`_ on ``lynx`` somehow looks better than the
 actual website??
@@ -147,9 +147,9 @@ Where have all the RPi laptops gone
 -----------------------------------
 
 I've poked fun at Elecrow (the maker of the CrowPi-L) a few times but
-it seems like they deserve my respect: "RPi laptop" is a cool idea and
-they seem to be one of only a handful of companies actually making it
-happen.
+it seems like they deserve my thanks and respect: "RPi laptop" is a
+cool idea and they seem to be one of only a handful of companies actually
+making it happen.
 
 ---------
 Worth it?

@@ -1,7 +1,7 @@
 .. _pcrowdoodle:
 
 =============================================
-pCrowDoodle, my "desirable difficulty" laptop
+pcrowDoodle, my "desirable difficulty" laptop
 =============================================
 
 *2024 Apr 27*
@@ -26,7 +26,7 @@ on a highly questionable Raspberry Pi "laptop".
 .. _CrowPi-L: https://web.archive.org/web/20240426205124/https://www.elecrow.com/crowpi-l-real-raspberry-pi-laptop-for-learning-programming-and-hardware.html
 
 The official name of this product is `CrowPi-L`_ but mine only answers to the
-moniker of *pCrowDoodle my beloved*.
+moniker of *pcrowDoodle my beloved*.
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/gif/pcrowdoodle.gif
 
@@ -38,7 +38,7 @@ moniker of *pCrowDoodle my beloved*.
 
 .. _Armadillo\: Opossum Heavy Armor: https://web.archive.org/web/20240426210415/https://timandraka.bigcartel.com/product/heavy-armor
 
-pCrowDoodle is best thought of as the computer-equivalent of
+pcrowDoodle is best thought of as the computer-equivalent of
 `Armadillo: Opossum Heavy Armor`_:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/armadillo.jpg
@@ -51,7 +51,7 @@ You just lift the magnetically (??) attached back cover...
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi10.jpg
 
-...and you're basically ready to fire pCrowDoodle up and realize that there's
+...and you're basically ready to fire pcrowDoodle up and realize that there's
 some boot firmware that's impossible to update at best and backdoor'd at worst:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi5.jpg
@@ -78,7 +78,7 @@ race on:
 "Dual boot": quite pleasant, actually
 -------------------------------------
 
-pCrowDoodle came with a little SD expansion thingy that lets you switch
+pcrowDoodle came with a little SD expansion thingy that lets you switch
 between an "A" SD card and a "B" SD card fairly quickly:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi8.jpg
@@ -135,7 +135,7 @@ cellphone power bank as a backup.
 
 An interesting challenge (maybe project?) is that the RPi OS UI doesn't
 seem to expect to run off battery so there's no "low battery" indicator.
-So when the battery's done pCrowDoodle abruptly shuts down on me. Maybe
+So when the battery's done pcrowDoodle abruptly shuts down on me. Maybe
 there's just some bit in ``raspi-config`` I need to flip.
 
 My coworker, Rob, had the interesting idea to supplement the battery reserves

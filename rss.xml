@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>biodigitaljazz.net</title>
-        <link>https://www.biodigitaljazz.net</link>
+        <link>https://biodigitaljazz.net</link>
 	<description>
             Given that you're following this blog, and the fact that you even
             use RSS in the first place, you may be intrigued to know that I
@@ -12,73 +12,82 @@
 	</description>
         <language>en-us</language>
 	<pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-	<atom:link href="https://www.biodigitaljazz.net/rss.xml" rel="self"
-                type="application/rss+xml"/>
+	<atom:link href="https://biodigitaljazz.net/rss.xml" rel="self"
+		type="application/rss+xml"/>
+        <item>
+            <title>pCrowDoodle, my "desirable difficulty" laptop</title>
+	    <link>https://biodigitaljazz.net/blog/pcrowdoodle.html</link>
+	    <description>
+                First impressions of my RPi laptop.
+            </description>
+	    <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+	    <guid>https://biodigitaljazz.net/blog/pcrowdoodle.html</guid>
+        </item>
         <item>
             <title>Axioms of Systemantics</title>
-	    <link>https://www.biodigitaljazz.net/blog/systemantics.html</link>
+	    <link>https://biodigitaljazz.net/blog/systemantics.html</link>
 	    <description>
                 Systemantics is a silly little book by John Gall with some
                 interesting ideas about why systems fail.
             </description>
 	    <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/systemantics.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/systemantics.html</guid>
         </item>
         <item>
             <title>Books about systems</title>
-	    <link>https://www.biodigitaljazz.net/blog/systems.html</link>
+	    <link>https://biodigitaljazz.net/blog/systems.html</link>
 	    <description>
                 A list of books related to systems.
             </description>
 	    <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/systems.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/systems.html</guid>
         </item>
         <item>
             <title>Transistor first reported as "Little Brain Cell"</title>
-	    <link>https://www.biodigitaljazz.net/blog/littlebraincell.html</link>
+	    <link>https://biodigitaljazz.net/blog/littlebraincell.html</link>
 	    <description>
                 Time magazine's first report on the transistor, back in 1948.
             </description>
 	    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/littlebraincell.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/littlebraincell.html</guid>
         </item>
         <item>
             <title>The "www" in www.biodigitaljazz.net</title>
-	    <link>https://www.biodigitaljazz.net/blog/www.html</link>
+	    <link>https://biodigitaljazz.net/blog/www.html</link>
 	    <description>
                 Ramblings about this site's use of "www".
             </description>
 	    <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/www.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/www.html</guid>
         </item>
         <item>
             <title>The eleventh circle of hell: setting up an RPi camera module</title>
-	    <link>https://www.biodigitaljazz.net/blog/picam.html</link>
+	    <link>https://biodigitaljazz.net/blog/picam.html</link>
 	    <description>
                 Don't trust the community content; rely solely on the official docs.
             </description>
 	    <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/picam.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/picam.html</guid>
         </item>
         <item>
             <title>You have thousands of ancestors from the 1500s</title>
-	    <link>https://www.biodigitaljazz.net/blog/ancestors.html</link>
+	    <link>https://biodigitaljazz.net/blog/ancestors.html</link>
 	    <description>
                 The math is a bit fuzzy but one thing is for certain: you've
                 got a lot of ancestors.
             </description>
 	    <pubDate>Mon, 4 Sep 2023 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/ancestors.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/ancestors.html</guid>
         </item>
         <item>
             <title>How to program an Arduino Uno in Assembly</title>
-	    <link>https://www.biodigitaljazz.net/blog/asm.html</link>
+	    <link>https://biodigitaljazz.net/blog/asm.html</link>
 	    <description>
                 An end-to-end tutorial on how to create a blinky program for
                 the Arduino Uno R3 in Assembly.
             </description>
 	    <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-	    <guid>https://www.biodigitaljazz.net/blog/asm.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/asm.html</guid>
         </item>
     </channel>
 </rss>

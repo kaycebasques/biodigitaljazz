@@ -153,9 +153,9 @@ RPi OS is a sweet spot for exploratory hacking IMO:
 
 * It's trivial to set up on an SD card
 * It comes pre-loaded with lots of interesting stuff
-  (``for name in $(ls /usr/bin); do man -f $name; done``)
+  (``for name in $(ls /bin); do man -f $name; done``)
 * It's the same ecosystem of tools/programs/etc. as my work env
-  <3 Debian
+  (<3 Debian <3)
 * The RPi hardware itself really invites you to learn about it
   on a deeper level. Have you seen those datasheets? Delightful
 

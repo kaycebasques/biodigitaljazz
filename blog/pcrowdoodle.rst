@@ -50,7 +50,7 @@ You just lift the magnetically (??) attached back cover...
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi10.jpg
 
 ...and you're basically ready to fire pCrowDoodle up and realize that there's
-some boot firmware that is impossible to update at best and backdoor'd at worst:
+some boot firmware that's impossible to update at best and backdoor'd at worst:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi5.jpg
 
@@ -92,8 +92,7 @@ And I even got OpenBSD working on the other SD!
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi9.jpg
 
-Pretty excited about that. I'm going to leave it as a purely console-based
-experience.
+Pretty excited to finally try out a BSD distro. Gonna leave it GUI-free.
 
 -----------------------------------------
 Unusable trackpad: a blessing in disguise
@@ -103,11 +102,12 @@ The trackpad is comically small and has already started to freeze up on me:
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/jpg/crowpi3.jpg
 
-But going into the purchase I expected the trackpad to be unusable. I
-was kinda hoping for it, actually... I've been meaning to get really solid
-at keyboard-based navigation. This is the main "desirable difficulty" thing
-for me. The other cool thing is it's forcing me to find CLI commands for
-common tasks such as locking the screen.
+Going into the purchase I expected this. I was kinda hoping for it,
+actually... I've been meaning to get really solid at keyboard-based
+navigation. This is the main "desirable difficulty" thing for me.
+A cool side-effect of forcing myself to get good at keyboard-based
+navigation is that I'm also learning the CLI-equivalent for common actions,
+such as `dm-tool lock` to lock the screen.
 
 `Lobsters <https://lobste.rs>`_ on ``lynx`` somehow looks better than the
 actual website??
@@ -133,4 +133,24 @@ cellphone power bank as a backup.
 
 An interesting challenge (maybe project?) is that the RPi OS UI doesn't
 seem to expect to run off battery so there's no "low battery" indicator.
-Meaning when the battery's done pCrowDoodle just abruptly shuts down on me.
+So when the battery's done pCrowDoodle abruptly shuts down on me. Maybe
+there's just some bit in ``raspi-config`` I need to flip.
+
+My coworker, Rob, had the interesting idea to supplement the battery reserves
+with a cellphone power bank. The power bank would probably have some
+"low charge" indicator, too.
+
+-----------------------------------
+Where have all the RPi laptops gone
+-----------------------------------
+
+I've poked fun at Elecrow (the maker of the CrowPi-L) a few times but
+it seems like they deserve my respect: "RPi laptop" is a cool idea and
+they seem to be one of only a handful of companies actually making it
+happen.
+
+---------
+Worth it?
+---------
+
+Too soon to tell. I'll report back in a month.

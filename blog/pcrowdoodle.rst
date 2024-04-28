@@ -30,6 +30,8 @@ moniker of *pCrowDoodle my beloved*.
 
 .. image:: https://raw.githubusercontent.com/kaycebasques/media/main/gif/pcrowdoodle.gif
 
+(This is not an "affiliate shill" post; I have nothing to disclose.)
+
 --------
 "laptop"
 --------

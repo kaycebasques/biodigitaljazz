@@ -147,7 +147,7 @@ Where have all the RPi laptops gone
 I've poked fun at Elecrow (the maker of the CrowPi-L) a few times but
 it seems like they deserve my thanks and respect: "RPi laptop" is a
 cool idea and they seem to be one of only a handful of companies actually
-making it happen.'
+making it happen.
 
 RPi OS is a sweet spot for exploratory hacking IMO:
 

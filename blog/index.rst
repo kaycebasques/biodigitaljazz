@@ -14,8 +14,6 @@ Read you a thing
    picam
    www
    littlebraincell
-   systems
    systemantics
-   STTTGTS
-   archetypes
+   stttgts
    pcrowdoodle

@@ -12,6 +12,22 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
+    section {
+        div.highlight {
+            background-color: floralwhite;
+        }
+        li {
+            p {
+                margin: 0;
+            }
+        }
+	pre {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            padding-block-end: 1em;
+            padding-block-start: 1em;
+        }
+    }
 }
 
 blockquote {

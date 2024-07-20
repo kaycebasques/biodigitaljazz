@@ -15,6 +15,10 @@ body {
     section {
         div.highlight {
             background-color: floralwhite;
+	    pre {
+                font-family: "Noto Sans Mono", monospace;
+		font-size: 0.9em;
+            }
         }
         li {
             p {

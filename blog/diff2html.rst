@@ -46,7 +46,8 @@ can change:
 
 I created a `demo commit`_ to attempt to trigger all the change types
 but couldn't figure out the last threee (``copied``, ``changed``, and
-``unchanged``).
+``unchanged``). What's the difference between ``modified`` and ``changed``?
+How the hell do I ``unchanged`` a file?? (Reverting it?)
 
 Here's the thing that I feel I'm holding wrong. On my naive first attempt,
 I basically passed the commit data from GitHub directly to diff2html,

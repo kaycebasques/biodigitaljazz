@@ -17,3 +17,4 @@ Read you a thing
    systemantics
    stttgts
    pcrowdoodle
+   diff2html

@@ -9,6 +9,7 @@ Bookmarks
 
 My bookmarks related to `hacking`_ or `the third culture`_
 
+* `Ganssle <https://www.ganssle.com/>`_
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_
 * `Cheating Is All You Need <https://about.sourcegraph.com/blog/cheating-is-all-you-need>`_

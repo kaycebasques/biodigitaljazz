@@ -30,9 +30,7 @@ Books about the history of computing
 * `The Art of Computer Programming <https://www-cs-faculty.stanford.edu/~knuth/taocp.html>`_
 * `The Computer and the Brain <https://en.wikipedia.org/wiki/The_Computer_and_the_Brain>`_
 * `The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage <https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)>`_
-* `The Dream Machine <https://press.stripe.com/the-dream-machine>`_
-  * It's billed as a biography of J. C. R. Licklider but it's really a history
-    of why time-sharing was revolutionary and ARPANET (which was obviously revolutionary)
+* `The Dream Machine <https://press.stripe.com/the-dream-machine>`_. It's billed as a biography of J. C. R. Licklider but it's really a history of why time-sharing was revolutionary and ARPANET (which was obviously revolutionary).
 * `The Friendly Orange Glow: The Untold Story of the Plato System and the Dawn of Cyberculture <http://friendlyorangeglow.com/>`_
 * `The Fugitive Game <https://www.hachettebookgroup.com/titles/jonathan-littman/the-fugitive-game/9780316528696/>`_
 * `The Road Ahead <https://en.wikipedia.org/wiki/The_Road_Ahead_(Gates_book)>`_

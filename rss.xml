@@ -11,9 +11,22 @@
             y'all."
 	</description>
         <language>en-us</language>
-	<pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+  <pubDate>Sun, 17 Nov 2024 09:03:03 -0700</pubDate>
 	<atom:link href="https://biodigitaljazz.net/rss.xml" rel="self"
 		type="application/rss+xml"/>
+
+
+<item>
+  <title>Books about the history of computing</title>
+  <link>https://biodigitaljazz.net/blog/history.html</link>
+  <description>
+    A list of books about the history of computing, most of which I have not read.
+  </description>
+  <pubDate>Sun, 17 Nov 2024 09:03:03 -0700</pubDate>
+  <guid>https://biodigitaljazz.net/blog/diff2html.html</guid>
+</item>
+
+
         <item>
             <title>diff2html + GitHub API = ???</title>
 	    <link>https://biodigitaljazz.net/blog/diff2html.html</link>

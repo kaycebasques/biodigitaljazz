@@ -9,6 +9,7 @@ Read you a thing
 .. toctree::
    :maxdepth: 1
 
+   history
    asm
    ancestors
    picam

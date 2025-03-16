@@ -19,3 +19,4 @@ Read you a thing
    stttgts
    pcrowdoodle
    diff2html
+   smell-o-vision

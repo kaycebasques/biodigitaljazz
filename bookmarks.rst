@@ -4,11 +4,6 @@
 Bookmarks
 =========
 
-.. _the third culture: https://www.edge.org/conversation/kevin_kelly-the-third-culture
-.. _hacking: http://www.catb.org/jargon/html/H/hacker.html
-
-My bookmarks related to `hacking`_ or `the third culture`_
-
 * `Ganssle <https://www.ganssle.com/>`_
 * `Scenius, Or Communal Genius <https://kk.org/thetechnium/scenius-or-comm/>`_
 * `My $500M Mars Rover Mistake: A Failure Story <https://www.chrislewicki.com/articles/failurestory>`_
@@ -36,3 +31,20 @@ My bookmarks related to `hacking`_ or `the third culture`_
 * `Tron Wiki: The Dude <https://web.archive.org/web/20240124001923/https://tron.fandom.com/wiki/Tron_Wiki:The_Dude>`_
 * `Three Virtues <https://thethreevirtues.com/>`_
 * `Institutions Try To Preserve The Problem To Which They Are The Solution <https://effectiviology.com/shirky-principle/>`_
+* `A Brief Rant On The Future Of Interaction Design <https://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/>`_
+* `Computers And Creativity <https://www.molly.info/cc>`_
+
+----
+TODO
+----
+
+* `Augmenting Human Intellect: A Conceptual Framework <https://www.dougengelbart.org/content/view/138>`_
+* `The Computer Scientist as Toolsmith II <https://www.cs.unc.edu/~brooks/Toolsmith-CACM.pdf>`_  
+* `A Brief History of Human Computer Interaction Technology <https://www.cs.cmu.edu/~amulet/papers/uihistory.tr.html>`_
+* `Generating of concept-representative symbols <https://arxiv.org/abs/1707.09432>`_
+* `Silicon Valley Abandons the Culture That Made It the Envy of the World <https://www.theatlantic.com/technology/archive/2020/01/why-silicon-valley-and-big-tech-dont-innovate-anymore/604969/>`_
+* `There Will Always Be Limits to How Creative a Computer Can Be <https://hbr.org/2017/04/there-will-always-be-limits-to-how-creative-a-computer-can-be>`_
+* `The Obscure Features Hypothesis in design innovation <https://www.tandfonline.com/doi/abs/10.1080/21650349.2014.893840?journalCode=tdci20>`_
+* `Using Artificial Intelligence to Augment Human Intelligence <https://distill.pub/2017/aia/>`_
+* `Designing for Homo Ludens <https://www.researchgate.net/publication/242529258_Designing_for_Homo_Ludens>`_
+* `The Pleasure and Pain of Speed <https://nautil.us/the-pleasure-and-pain-of-speed-234746/>`_

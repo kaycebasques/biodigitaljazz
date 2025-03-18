@@ -5,17 +5,37 @@ extern crate rocket;
 mod tests;
 
 use image::{ImageBuffer, Rgb};
+use rand::prelude::*;
 use rocket::http::{ContentType, Status};
 use std::io::Cursor;
 
+// fn generate_random_image() -> ImageBuffer<Rgb<u8>, Vec<u8>> {
+//     let mut rng = rand::rng();
+//
+//     // Create a new RGB image buffer
+//     let mut img = ImageBuffer::new(FAVICON_SIZE, FAVICON_SIZE);
+//
+//     // Fill with random RGB values
+//     for x in 0..FAVICON_SIZE {
+//         for y in 0..FAVICON_SIZE {
+//             let r: u8 = rng.random::<u8>();
+//             let g: u8 = rng.random::<u8>();
+//             let b: u8 = rng.random::<u8>();
+//             img.put_pixel(x, y, Rgb([r, g, b]));
+//         }
+//     }
+//
+//     img
+// }
+
 fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
+    let mut rng = rand::rng();
     let mut img = ImageBuffer::new(100, 100);
-    for (x, y, pixel) in img.enumerate_pixels_mut() {
-        *pixel = Rgb([
-            (x as f32 / 100.0 * 255.0) as u8,
-            (y as f32 / 100.0 * 255.0) as u8,
-            0,
-        ]);
+    for (_, _, pixel) in img.enumerate_pixels_mut() {
+        let r: u8 = rng.random::<u8>();
+        let g: u8 = rng.random::<u8>();
+        let b: u8 = rng.random::<u8>();
+        *pixel = Rgb([r, g, b]);
     }
     let mut buffer = Cursor::new(Vec::new());
     img.write_to(&mut buffer, image::ImageFormat::Ico)?;
@@ -40,7 +60,6 @@ fn rocket() -> _ {
 
 // use image::codecs::ico::IcoEncoder;
 // use image::{ImageBuffer, Rgb};
-// use rand::Rng;
 // use rocket::http::{ContentType, Status};
 // use rocket::response::status;
 // use rocket::{get, routes};
@@ -72,21 +91,3 @@ fn rocket() -> _ {
 //     }
 // }
 //
-// fn generate_random_image() -> ImageBuffer<Rgb<u8>, Vec<u8>> {
-//     let mut rng = rand::rng();
-//
-//     // Create a new RGB image buffer
-//     let mut img = ImageBuffer::new(FAVICON_SIZE, FAVICON_SIZE);
-//
-//     // Fill with random RGB values
-//     for x in 0..FAVICON_SIZE {
-//         for y in 0..FAVICON_SIZE {
-//             let r: u8 = rng.random::<u8>();
-//             let g: u8 = rng.random::<u8>();
-//             let b: u8 = rng.random::<u8>();
-//             img.put_pixel(x, y, Rgb([r, g, b]));
-//         }
-//     }
-//
-//     img
-// }

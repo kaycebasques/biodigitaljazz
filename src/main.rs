@@ -4,80 +4,89 @@ extern crate rocket;
 #[cfg(test)]
 mod tests;
 
-#[derive(FromFormField)]
-enum Lang {
-    #[field(value = "en")]
-    English,
-    #[field(value = "ru")]
-    #[field(value = "ру")]
-    Russian,
-}
+use image::{ImageBuffer, Rgb};
+use rocket::http::{ContentType, Status};
+use std::io::Cursor;
 
-#[derive(FromForm)]
-struct Options<'r> {
-    emoji: bool,
-    name: Option<&'r str>,
-}
-
-// Try visiting:
-//   http://127.0.0.1:8000/hello/world
-#[get("/world")]
-fn world() -> &'static str {
-    "Hello, world!"
-}
-
-// Try visiting:
-//   http://127.0.0.1:8000/hello/мир
-#[get("/мир")]
-fn mir() -> &'static str {
-    "Привет, мир!"
-}
-
-// Try visiting:
-//   http://127.0.0.1:8000/wave/Rocketeer/100
-#[get("/<name>/<age>", rank = 2)]
-fn wave(name: &str, age: u8) -> String {
-    format!("👋 Hello, {} year old named {}!", age, name)
-}
-
-// Note: without the `..` in `opt..`, we'd need to pass `opt.emoji`, `opt.name`.
-//
-// Try visiting:
-//   http://127.0.0.1:8000/?emoji
-//   http://127.0.0.1:8000/?name=Rocketeer
-//   http://127.0.0.1:8000/?lang=ру
-//   http://127.0.0.1:8000/?lang=ру&emoji
-//   http://127.0.0.1:8000/?emoji&lang=en
-//   http://127.0.0.1:8000/?name=Rocketeer&lang=en
-//   http://127.0.0.1:8000/?emoji&name=Rocketeer
-//   http://127.0.0.1:8000/?name=Rocketeer&lang=en&emoji
-//   http://127.0.0.1:8000/?lang=ru&emoji&name=Rocketeer
-#[get("/?<lang>&<opt..>")]
-fn hello(lang: Option<Lang>, opt: Options<'_>) -> String {
-    let mut greeting = String::new();
-    if opt.emoji {
-        greeting.push_str("👋 ");
+fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
+    let mut img = ImageBuffer::new(100, 100);
+    for (x, y, pixel) in img.enumerate_pixels_mut() {
+        *pixel = Rgb([
+            (x as f32 / 100.0 * 255.0) as u8,
+            (y as f32 / 100.0 * 255.0) as u8,
+            0,
+        ]);
     }
+    let mut buffer = Cursor::new(Vec::new());
+    img.write_to(&mut buffer, image::ImageFormat::Ico)?;
+    Ok(buffer.into_inner())
+}
 
-    match lang {
-        Some(Lang::Russian) => greeting.push_str("Привет"),
-        Some(Lang::English) => greeting.push_str("Hello"),
-        None => greeting.push_str("Hi"),
+#[get("/favicon.ico")]
+fn get_favicon() -> (Status, (ContentType, Vec<u8>)) {
+    match generate_favicon() {
+        Ok(image_data) => (Status::Ok, (ContentType::Icon, image_data)),
+        Err(_) => (
+            Status::InternalServerError,
+            (ContentType::Text, "Image generation failed".into()),
+        ),
     }
-
-    if let Some(name) = opt.name {
-        greeting.push_str(", ");
-        greeting.push_str(name);
-    }
-
-    greeting.push('!');
-    greeting
 }
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build()
-        .mount("/", routes![hello])
-        .mount("/hello", routes![world, mir])
-        .mount("/wave", routes![wave])
+    rocket::build().mount("/", routes![get_favicon])
 }
+
+// use image::codecs::ico::IcoEncoder;
+// use image::{ImageBuffer, Rgb};
+// use rand::Rng;
+// use rocket::http::{ContentType, Status};
+// use rocket::response::status;
+// use rocket::{get, routes};
+// use std::io::Cursor;
+//
+// // Define a favicon size
+// const FAVICON_SIZE: u32 = 16;
+//
+// #[get("/favicon.ico")]
+// fn favicon() -> status::Accepted<ImageBuffer<Rgb<u8>, Vec<u8>>> {
+//     let image_buffer = generate_random_image();
+//     let mut ico_data = Vec::new();
+//     let encoder = IcoEncoder::new(&mut ico_data);
+//     match image_buffer.write_with_encoder(encoder) {
+//         Ok(_) => {
+//             // Return the image as a response
+//             Response::build()
+//                 .header(ContentType::Icon)
+//                 .sized_body(ico_data.len(), Cursor::new(ico_data))
+//                 .status(Status::Ok)
+//                 .finalize()
+//         }
+//         Err(_) => {
+//             // Return a 500 error if encoding fails
+//             Response::build()
+//                 .status(Status::InternalServerError)
+//                 .finalize()
+//         }
+//     }
+// }
+//
+// fn generate_random_image() -> ImageBuffer<Rgb<u8>, Vec<u8>> {
+//     let mut rng = rand::rng();
+//
+//     // Create a new RGB image buffer
+//     let mut img = ImageBuffer::new(FAVICON_SIZE, FAVICON_SIZE);
+//
+//     // Fill with random RGB values
+//     for x in 0..FAVICON_SIZE {
+//         for y in 0..FAVICON_SIZE {
+//             let r: u8 = rng.random::<u8>();
+//             let g: u8 = rng.random::<u8>();
+//             let b: u8 = rng.random::<u8>();
+//             img.put_pixel(x, y, Rgb([r, g, b]));
+//         }
+//     }
+//
+//     img
+// }

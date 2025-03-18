@@ -6,3 +6,5 @@ publish = false
 
 [dependencies]
 rocket = "0.5.1"
+rand = "0.9.0"
+image = { version = "0.25.5", features = ["ico"] }

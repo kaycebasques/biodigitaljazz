@@ -30,7 +30,7 @@ use std::io::Cursor;
 
 fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
     let mut rng = rand::rng();
-    let mut img = ImageBuffer::new(100, 100);
+    let mut img = ImageBuffer::new(16, 16);
     for (_, _, pixel) in img.enumerate_pixels_mut() {
         let r: u8 = rng.random::<u8>();
         let g: u8 = rng.random::<u8>();

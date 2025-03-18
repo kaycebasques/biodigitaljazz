@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bio-digital jazz, man</title>
-        <link rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">
+        <link id="favicon" rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/biodigitaljazz.css', 1) }}">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="https://biodigitaljazz.net/rss.xml"/>
@@ -44,5 +44,11 @@
             <p><a href="https://twitter.com/manual_txt/status/489580107132981249">technologycat src</a></p>
             <p><a href="https://github.com/kaycebasques/biodigitaljazz">website src</a></p>
         </footer>
+        <script>
+            window.setInterval(() => {
+                const node = document.querySelector('#favicon');
+                node.href = `https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`;
+            }, 100);
+        </script>
     </body>
 </html>

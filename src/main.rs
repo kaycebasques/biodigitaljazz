@@ -6,27 +6,25 @@ mod tests;
 
 use image::{ImageBuffer, Rgb};
 use rand::prelude::*;
-use rocket::http::{ContentType, Status};
+use rocket::Request;
+use rocket::http::{ContentType, Header, Status};
+use rocket::response::{self, Responder, Response};
 use std::io::Cursor;
 
-// fn generate_random_image() -> ImageBuffer<Rgb<u8>, Vec<u8>> {
-//     let mut rng = rand::rng();
-//
-//     // Create a new RGB image buffer
-//     let mut img = ImageBuffer::new(FAVICON_SIZE, FAVICON_SIZE);
-//
-//     // Fill with random RGB values
-//     for x in 0..FAVICON_SIZE {
-//         for y in 0..FAVICON_SIZE {
-//             let r: u8 = rng.random::<u8>();
-//             let g: u8 = rng.random::<u8>();
-//             let b: u8 = rng.random::<u8>();
-//             img.put_pixel(x, y, Rgb([r, g, b]));
-//         }
-//     }
-//
-//     img
-// }
+pub struct NoCache<R>(pub R);
+
+impl<'r, 'o: 'r, R: Responder<'r, 'o>> Responder<'r, 'o> for NoCache<R> {
+    fn respond_to(self, req: &'r Request<'_>) -> response::Result<'o> {
+        Response::build_from(self.0.respond_to(req)?)
+            .header(Header::new(
+                "Cache-Control",
+                "no-cache, no-store, must-revalidate",
+            ))
+            .header(Header::new("Pragma", "no-cache"))
+            .header(Header::new("Expires", "0"))
+            .ok()
+    }
+}
 
 fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
     let mut rng = rand::rng();
@@ -43,13 +41,11 @@ fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
 }
 
 #[get("/favicon.ico")]
-fn get_favicon() -> (Status, (ContentType, Vec<u8>)) {
+// fn get_favicon() -> (Status, (ContentType, Vec<u8>)) {
+fn get_favicon() -> Result<NoCache<(Status, (ContentType, Vec<u8>))>, Status> {
     match generate_favicon() {
-        Ok(image_data) => (Status::Ok, (ContentType::Icon, image_data)),
-        Err(_) => (
-            Status::InternalServerError,
-            (ContentType::Text, "Image generation failed".into()),
-        ),
+        Ok(image_data) => Ok(NoCache((Status::Ok, (ContentType::Icon, image_data)))),
+        Err(_) => Err(Status::InternalServerError),
     }
 }
 

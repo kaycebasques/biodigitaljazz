@@ -1,0 +1,8 @@
+[package]
+name = "biodigitaljazz"
+edition = "2024"
+version = "0.0.0"
+publish = false
+
+[dependencies]
+rocket = "0.5.1"

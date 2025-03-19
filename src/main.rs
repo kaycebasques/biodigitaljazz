@@ -22,6 +22,10 @@ impl<'r, 'o: 'r, R: Responder<'r, 'o>> Responder<'r, 'o> for NoCache<R> {
             ))
             .header(Header::new("Pragma", "no-cache"))
             .header(Header::new("Expires", "0"))
+            .header(Header::new(
+                "Access-Control-Allow-Origin",
+                "https://biodigitaljazz.net",
+            ))
             .ok()
     }
 }

@@ -3,7 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }}</title>
-        <link id="favicon" rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">
+        <!--<link id="favicon" rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">-->
+        <link id="favicon" rel="icon" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/biodigitaljazz.css', 1) }}">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="https://biodigitaljazz.net/rss.xml"/>
@@ -24,7 +25,7 @@
         </nav>
         {% block body %}{{ body() }}{% endblock %}
         <footer>
-            <p>© 2025 Kayce Basques</p>;
+            <p>© 2025 Kayce Basques</p>
             <p><a href="/_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4">Bio-digital jazz, man</a></p>
 <pre><code>
  ⊂_ヽ
@@ -35,25 +36,67 @@
  　 / 　/  ＼＼
     |　ノ　  ヽ_つ
 　 /　/ 
-　(　(ヽ ship
-　|　|、 \ it
-　| 丿 ＼ \ and
-　| |　　) / pray
+　(　(ヽ  
+　|　|、 \ create
+　| 丿 ＼ \ learn
+　| |　　) / discover
  ノ_)　　Lﾉ
 </code></pre>
             <p><a href="https://twitter.com/manual_txt/status/489580107132981249">technologycat src</a></p>
             <p><a href="https://github.com/kaycebasques/biodigitaljazz">website src</a></p>
         </footer>
         <script>
-            const INTERVAL_MS = 10;
-            async function updateFavicon() {
-                const response = await fetch(`https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`);
-                const blob = await response.blob();
-                const url = URL.createObjectURL(blob);
-                document.querySelector('#favicon').href = url;
-                window.setTimeout(updateFavicon, INTERVAL_MS);
-            } 
-            window.setTimeout(updateFavicon, INTERVAL_MS);
+            // const INTERVAL_MS = 10;
+            // async function updateFavicon() {
+            //     const response = await fetch(`https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`);
+            //     const blob = await response.blob();
+            //     const url = URL.createObjectURL(blob);
+            //     document.querySelector('#favicon').href = url;
+            //     window.setTimeout(updateFavicon, INTERVAL_MS);
+            // } 
+            // window.setTimeout(updateFavicon, INTERVAL_MS);
+
+function setRandomFavicon() {
+  // 1. Create a canvas element
+  const canvas = document.createElement('canvas');
+  canvas.width = 16;
+  canvas.height = 16;
+
+  // 2. Get the 2D rendering context
+  const ctx = canvas.getContext('2d');
+
+  // 3. Generate random RGB values and draw pixels
+  for (let y = 0; y < canvas.height; y++) {
+    for (let x = 0; x < canvas.width; x++) {
+      // Generate random values for red, green, and blue (0-255)
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+
+      // Set the fill style to the random RGB color
+      ctx.fillStyle = `rgb(${r},${g},${b})`;
+
+      // Draw a 1x1 rectangle at the current position
+      ctx.fillRect(x, y, 1, 1);
+    }
+  }
+
+  // 4. Convert the canvas to a Data URL (PNG format is widely supported)
+  const faviconDataURL = canvas.toDataURL('image/x-icon');
+
+  // 5. Update the favicon link element
+  let faviconLink = document.querySelector("#favicon");
+
+  // Set the href to the Data URL
+  faviconLink.href = faviconDataURL;
+}
+
+// Call the function to set the random favicon
+setRandomFavicon();
+
+// Optional: Set it to change every few seconds
+setInterval(setRandomFavicon, 1); // Change every 2 seconds
+
         </script>
     </body>
 </html>

@@ -45,10 +45,13 @@
             <p><a href="https://github.com/kaycebasques/biodigitaljazz">website src</a></p>
         </footer>
         <script>
-            window.setInterval(() => {
+            const INTERVAL_MS = 100;
+            function updateFavicon() {
                 const node = document.querySelector('#favicon');
                 node.href = `https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`;
-            }, 1000);
+                window.setTimeout(updateFavicon, INTERVAL_MS);
+            } 
+            window.setTimeout(updateFavicon, INTERVAL_MS);
         </script>
     </body>
 </html>

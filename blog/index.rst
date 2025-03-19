@@ -20,3 +20,4 @@ Read you a thing
    pcrowdoodle
    diff2html
    smell-o-vision
+   favicon

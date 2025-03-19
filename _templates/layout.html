@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bio-digital jazz, man</title>
+        <title>{{ title }}</title>
         <link id="favicon" rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/biodigitaljazz.css', 1) }}">
         <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
@@ -24,7 +24,7 @@
         </nav>
         {% block body %}{{ body() }}{% endblock %}
         <footer>
-            <p>© 2025 Kayce Basques</p>
+            <p>© 2025 Kayce Basques</p>;
             <p><a href="/_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4">Bio-digital jazz, man</a></p>
 <pre><code>
  ⊂_ヽ
@@ -45,10 +45,12 @@
             <p><a href="https://github.com/kaycebasques/biodigitaljazz">website src</a></p>
         </footer>
         <script>
-            const INTERVAL_MS = 100;
-            function updateFavicon() {
-                const node = document.querySelector('#favicon');
-                node.href = `https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`;
+            const INTERVAL_MS = 10;
+            async function updateFavicon() {
+                const response = await fetch(`https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`);
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                document.querySelector('#favicon').href = url;
                 window.setTimeout(updateFavicon, INTERVAL_MS);
             } 
             window.setTimeout(updateFavicon, INTERVAL_MS);

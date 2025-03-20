@@ -29,7 +29,9 @@ html_permalinks_icon = "#"
 extensions = ["sphinx_reredirects"]
 
 # Redirects
-redirects = {}
+redirects = {
+    "blog/ancestors": "https://web.archive.org/web/20250320231129/https://biodigitaljazz.net/blog/ancestors.html"
+}
 
 # Code
 pygments_style = "sphinx"

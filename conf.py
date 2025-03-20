@@ -34,6 +34,8 @@ redirects = {
     "blog/picam": "https://web.archive.org/web/20250320231430/https://biodigitaljazz.net/blog/picam.html",
     "blog/diff2html": "https://web.archive.org/web/20250320231610/https://biodigitaljazz.net/blog/diff2html.html",
     "blog/littlebraincell": "./transistor.html",
+    "blog/stttgts": "https://web.archive.org/web/20250320235155/https://biodigitaljazz.net/blog/stttgts.html",
+    "blog/history": "https://web.archive.org/web/20250320235612/https://biodigitaljazz.net/blog/history.html",
 }
 
 # Code

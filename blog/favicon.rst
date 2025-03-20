@@ -141,6 +141,8 @@ something like this:
 
 That's TV static. So what the heck is it?
 
+https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television?hl=en-US
+
 https://www.highdefdigest.com/news/show/tv-static-comes-from-a-surprising-source-the-big-bang/39610
 
 https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/
@@ -155,6 +157,7 @@ patience. You'll have to look that one up yourself.
 -------------
 Random colors
 -------------
+
 
 My first idea 
 

@@ -1,2 +1,0 @@
-this file will be modified as part of diff2html demo
-(this is the edit)

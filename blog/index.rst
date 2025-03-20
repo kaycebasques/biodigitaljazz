@@ -11,10 +11,8 @@ Read you a thing
 
    history
    asm
-   littlebraincell
+   transistor
    systemantics
    stttgts
    pcrowdoodle
-   diff2html
-   smell-o-vision
    favicon

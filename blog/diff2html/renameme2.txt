@@ -1,1 +1,0 @@
-this file will be renamed as part of diff2html demo

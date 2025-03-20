@@ -1,4 +1,4 @@
-.. _littlebraincell:
+.. _transistor:
 
 ================================================
 Transistor first reported as "Little Brain Cell"
@@ -74,4 +74,4 @@ nervous systems" and "little brain cells" from the `git-go`_.
 I was also able to find a `scan`_ of the magazine. The web is a vast treasure
 trove of historical content.
 
-.. image:: littlebraincell.png
+.. image:: transistor.png

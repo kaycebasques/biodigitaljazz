@@ -32,6 +32,8 @@ extensions = ["sphinx_reredirects"]
 redirects = {
     "blog/ancestors": "https://web.archive.org/web/20250320231129/https://biodigitaljazz.net/blog/ancestors.html",
     "blog/picam": "https://web.archive.org/web/20250320231430/https://biodigitaljazz.net/blog/picam.html",
+    "blog/diff2html": "https://web.archive.org/web/20250320231610/https://biodigitaljazz.net/blog/diff2html.html",
+    "blog/littlebraincell": "./transistor.html",
 }
 
 # Code

@@ -11,7 +11,6 @@ Read you a thing
 
    history
    asm
-   picam
    littlebraincell
    systemantics
    stttgts

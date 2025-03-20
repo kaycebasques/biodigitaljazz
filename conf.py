@@ -30,7 +30,8 @@ extensions = ["sphinx_reredirects"]
 
 # Redirects
 redirects = {
-    "blog/ancestors": "https://web.archive.org/web/20250320231129/https://biodigitaljazz.net/blog/ancestors.html"
+    "blog/ancestors": "https://web.archive.org/web/20250320231129/https://biodigitaljazz.net/blog/ancestors.html",
+    "blog/picam": "https://web.archive.org/web/20250320231430/https://biodigitaljazz.net/blog/picam.html",
 }
 
 # Code

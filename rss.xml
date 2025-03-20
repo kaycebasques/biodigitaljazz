@@ -28,15 +28,6 @@
 
 
         <item>
-            <title>diff2html + GitHub API = ???</title>
-	    <link>https://biodigitaljazz.net/blog/diff2html.html</link>
-	    <description>
-                Am I holding this right?
-            </description>
-	    <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/diff2html.html</guid>
-        </item>
-        <item>
             <title>pCrowDoodle, my "desirable difficulty" laptop</title>
 	    <link>https://biodigitaljazz.net/blog/pcrowdoodle.html</link>
 	    <description>
@@ -56,50 +47,13 @@
 	    <guid>https://biodigitaljazz.net/blog/systemantics.html</guid>
         </item>
         <item>
-            <title>Books about systems</title>
-	    <link>https://biodigitaljazz.net/blog/systems.html</link>
-	    <description>
-                A list of books related to systems.
-            </description>
-	    <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/systems.html</guid>
-        </item>
-        <item>
             <title>Transistor first reported as "Little Brain Cell"</title>
-	    <link>https://biodigitaljazz.net/blog/littlebraincell.html</link>
+	    <link>https://biodigitaljazz.net/blog/transistor.html</link>
 	    <description>
                 Time magazine's first report on the transistor, back in 1948.
             </description>
 	    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/littlebraincell.html</guid>
-        </item>
-        <item>
-            <title>The "www" in www.biodigitaljazz.net</title>
-	    <link>https://biodigitaljazz.net/blog/www.html</link>
-	    <description>
-                Ramblings about this site's use of "www".
-            </description>
-	    <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/www.html</guid>
-        </item>
-        <item>
-            <title>The eleventh circle of hell: setting up an RPi camera module</title>
-	    <link>https://biodigitaljazz.net/blog/picam.html</link>
-	    <description>
-                Don't trust the community content; rely solely on the official docs.
-            </description>
-	    <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/picam.html</guid>
-        </item>
-        <item>
-            <title>You have thousands of ancestors from the 1500s</title>
-	    <link>https://biodigitaljazz.net/blog/ancestors.html</link>
-	    <description>
-                The math is a bit fuzzy but one thing is for certain: you've
-                got a lot of ancestors.
-            </description>
-	    <pubDate>Mon, 4 Sep 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/ancestors.html</guid>
+	    <guid>https://biodigitaljazz.net/blog/transistor.html</guid>
         </item>
         <item>
             <title>How to program an Arduino Uno in Assembly</title>

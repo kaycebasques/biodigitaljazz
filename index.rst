@@ -2,9 +2,13 @@
 Home
 ====
 
-.. _Kayce Basques: https://kayce.basqu.es
+Adventures in {hard,soft,wet}ware
 
-Adventures in {hard,soft,wet}ware by `Kayce Basques`_
+--------------
+World-wide web
+--------------
+
+* :ref:`favicon`
 
 .. toctree::
    :maxdepth: 1

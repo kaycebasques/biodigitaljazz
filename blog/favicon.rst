@@ -4,59 +4,30 @@
 Generating random animated favicons
 ===================================
 
-.. _Inventing on Principle: https://youtu.be/PUv66718DII
-
-I created this website for fun. Yet the design is kinda boring. `Inventing on
-Principle`_ inspired me to start making computer-generated art, but I don't
-know anything about graphics. Where to begin…?
-
-Well, favicons are cool, and this site doesn't have one. And they're only
-16x16 pixels\ :sup:`1`. I can handle that. Heck, I can even hard-code all
-256 pixels if I get really desperate. Time to start hacking!
-
-.. raw:: html
-
-   <noscript>
-     You appear to have JavaScript disabled. You should be able to follow along with
-     most of the post, but you won't be able to see the demos, because they're
-     generated via JavaScript.
-   </noscript>
-
-.. _What is the best favicon size?: https://mailchimp.com/resources/favicon-size/
-.. _Build an adaptive favicon with SVG: https://web.dev/articles/building/an-adaptive-favicon
-
-:sup:`1` Best practice is to provide multiple sizes: 16x16, 32x32,
-96x96, 180x180, and 512x512. See `What is the best favicon size?`_ Or you can
-`build an adaptive favicon with SVG`_. I'm just gonna focus on 16x16 for now.
+This blog post is a meandering exploration of a random idea I had while
+walking: can I auto-generate a random favicon on every pageview?
 
 ---------
 Prior art
 ---------
 
-Don't know, don't care. I'm doing this for fun.
+Don't {know,care}. I'm doing this for fun. I enjoy encountering new ideas through the process of creation.
 
----------------
-A first attempt
----------------
+-------------
+Random colors
+-------------
 
 What if I just generate a random color in every pixel? What will that look like?
 
 .. _Rocket: https://rocket.rs
 .. _Render: https://render.com
 
-In my first implementation, I generated the favicon server-side, in a
-`Rocket`_ web app hosted on `Render`_. Notes on that experience:
+In my first implementation, I generated the favicon server-side. You can see the full
+code in :ref:`server` but I quickly realized that this approach wouldn't work. Or at least,
+it was wildly sub-optimal. More on that in a moment.
 
-* Render is nice. It's like Heroku, but not stuck in 2010.
-* I've heard that Rust has a reputation of making simple things difficult.
-  Boy, did it live it up to that reputation here. In Python or Node.js I
-  would be able to get this running in 10-20 minutes, whereas with Rust it
-  was more like 2-3 hours.
-* Rocket's incomplete docs didn't help matters, either. E.g. there's no guidance
-  on serving images or configuring CORS.
-
-But anywho, I did eventually get it working and was pretty excited by the
-result:
+When I eventually got this first implementation working, I was pretty excited
+to see the result:
 
 .. raw:: html
 
@@ -82,8 +53,11 @@ result:
      })();
    </script>
 
-Is that TV static?! That looks like TV static. But 16x16 is hard
-to see. Let's try 100x100.
+TV static! A grid of random colors looks like TV static.
+Obvious in hindsight, but I did not expect that.
+
+16x16 (the size of a basic favicon) is a little hard to see.
+Here's 100x100:
 
 .. raw:: html
 
@@ -109,50 +83,82 @@ to see. Let's try 100x100.
      })();
    </script>
 
-It is TV static!! Obvious in hindsight, but I did not expect that.
-
 -----------------------------------------------
 Tangential inquiry into the nature of TV static
 -----------------------------------------------
 
 What the heck is TV static, anyways? It was one of those things that
-just existed in the background of my 90s childhood, before I got curious
-about technology.
+just existed in the subconscious of my 90s childhood. I wasn't curious
+about technology back then.
 
-First, I guess I have to explain the experience of TV static to my fellow
-hackers born in the 2000s and later, because they have possibly never seen it.
-
-In my room I had a small TV like this:
-
-.. figure:: ../_static/tv.jpg
-
-   `Source <https://unsplash.com/photos/a-television-sitting-on-top-of-a-wooden-table-p6v-BExkaWg>`_
-
-As you flipped through the channels\ :sup:`2` you would eventually encounter
-something like this:
+Here's a brief description of 90s TV (and static) for my fellow hackers born in
+the 2000s and later who have probably never experienced it. Back then, you
+couldn't watch whatever you wanted, whenever you wanted. There was a fixed set
+of channels, and they played content on a fixed schedule. If you wanted to
+watch the new episode of The Simpsons, you had to tune in at 8PM on Sundays.
+Other times, you'd just flip through the channels and find something to watch,
+like this:
 
 .. raw:: html
 
-   <iframe src="https://www.youtube.com/embed/J_FVFMdiZ0w"
+   <iframe src="https://www.youtube.com/embed/XuWInDErrTU"
+           style="width: 100%; aspect-ratio: 560 / 315;"
            title="An example of TV static"
            frameborder="0"
            referrerpolicy="strict-origin-when-cross-origin"
            allowfullscreen></iframe>
 
-That's TV static. So what the heck is it?
+Eventually, you'd hit a channel with no content on it, and see something
+like this:
 
-https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television?hl=en-US
+.. raw:: html
 
-https://www.highdefdigest.com/news/show/tv-static-comes-from-a-surprising-source-the-big-bang/39610
+   <iframe src="https://www.youtube.com/embed/J_FVFMdiZ0w"
+           style="width: 100%; aspect-ratio: 560 / 315;"
+           title="An example of TV static"
+           frameborder="0"
+           referrerpolicy="strict-origin-when-cross-origin"
+           allowfullscreen></iframe>
 
-https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/
+That's TV static. So what the heck is it? The gist of the phenomenon
+is that old TVs are always trying to output video and audio; static
+is what you get when no real signal exists. To the TV, "putting on channel 2"
+actually meant "receive the video signal that's being broadcast at 55.25 MHz and
+the audio signal that's being broadcast at 59.75 MHz". Static is the TV just playing
+whatever random electrical signals that it's picking up. Some of it comes from components
+on the TV itself, some of it comes from 
 
-https://youtu.be/P_Oh7HizY5I
+TODO: black & white
 
-:sup:`2` Given the UX of Netflix, YouTube, etc. where you always actively choose
-something to watch (or the algorithm guesses at what to show you next) I'm not even
-sure if youngins will understand the concept of channels, but that's the limit of my
-patience. You'll have to look that one up yourself.
+Sources:
+
+* `The evolution of television <https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television>`_
+* `Noise (video) <https://en.wikipedia.org/wiki/Noise_(video)>`_
+* `Why don't TVs have static and white noise anymore? <https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/>`_
+
+.. https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television?hl=en-US
+.. https://www.highdefdigest.com/news/show/tv-static-comes-from-a-surprising-source-the-big-bang/39610
+.. https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/
+.. https://youtu.be/P_Oh7HizY5I
+
+-----------------------
+Animating the TV static
+-----------------------
+
+Back to the discussion about implementation. Once I realized that a grid
+of random colors looked like a frame of TV static, I knew I had to try to
+animate it to get the full TV static effect. I wrote a little JavaScript to
+fetch a new favicon every millisecond, but my server could not keep up with
+that speed. Also, it generated an annoying amount of network traffic. I tried
+reducing it to 
+
+
+
+---------------
+Prior art redux
+---------------
+
+Now that I'm done with my own explorations, let's search 
 
 -------------
 Random colors
@@ -183,14 +189,11 @@ What if I just put a random color in each pixel of the 16x16 grid? Rust is cool.
 Can I do it in Rust? With a lot of help from my friends Gemini and Claude I did
 eventually get something working.
 
---------
-Appendix
---------
+.. _server:
 
-.. _favicon-rs:
-
-Rust implementation
-===================
+------------------------------------
+Appendix: server-side implementation
+------------------------------------
 
 In the HTML the favicon was fetched from my web app running on `Render`_:
 
@@ -296,3 +299,13 @@ As well as ``Rocket.toml``:
 .. _Deploy a Rust Web App with Rocket: https://render.com/docs/deploy-rocket-rust
 
 See also `Deploy a Rust Web App with Rocket`_.
+
+Notes on my experience:
+
+* Render is nice. It's basically a Heroku that's not stuck in 2010.
+* I've heard that Rust has a reputation of making simple things difficult.
+  Boy, did it live it up to that reputation here. In Python or Node.js I
+  would be able to get this running in 10-20 minutes, whereas with Rust it
+  was more like 2-3 hours.
+* Rocket's incomplete docs didn't help matters, either. E.g. there's no guidance
+  on serving images or configuring CORS.

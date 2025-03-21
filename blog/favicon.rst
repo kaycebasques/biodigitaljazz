@@ -12,20 +12,20 @@ Prior art
 ---------
 
 Don't know, don't care. I'm doing this for fun. I enjoy encountering new ideas
-through the process of creation.
+through the creative process.
 
 -------------
 Random colors
 -------------
 
-What if I just generate a random color in every pixel? What will that look like?
+To begin, what if I just generate a random color in every pixel? What will that look like?
 
 .. _Rocket: https://rocket.rs
 .. _Render: https://render.com
 
 In my first implementation, I generated the favicon server-side. You can see the full
 code in :ref:`server` but I quickly realized that this approach wouldn't work. Or at least,
-it was wildly sub-optimal. More on that in a moment.
+it was sub-optimal. More on that later.
 
 When I eventually got this first implementation working, I was pretty excited
 to see the result:
@@ -123,19 +123,20 @@ like this:
 
 That's TV static. So what the heck is it?
 
-First, channels. To the TV, "putting on channel 2" meant tuning the video
-receiver to a specific frequency and the audio receiver to another specific
-frequency and then outputting the data received at those specific frequencies.
+It's easier if we start with channels. To the TV, "putting on channel 2" meant
+tuning the video receiver to a specific frequency and the audio receiver to
+another specific frequency and then outputting the data received at those
+specific frequencies.
 
 .. _cosmic microwave background: https://en.wikipedia.org/wiki/Cosmic_microwave_background
 
-Now, static. The gist of the phenomenon is that old TVs always output whatever
-their audio and video receivers pick up, and static is what happens when no real
-data is being broadcast over the channel. The TV is outputting the random electromagnetic
-radiation that happens to be occurring on the frequencies that it's tuned to receive.
-The TV itself generates some of this random electromagnetic radiation. Other electronic
-devices generate it, too. And, most cool of all, around 1% of it comes from the
-`cosmic microwave background`_ generated from the Big Bang!
+Now, static. The gist of the phenomenon is that old TVs were always outputting
+whatever their audio and video receivers were picking up, and sometimes there
+wasn't actually any meaningful data being broadcast over a particular channel.
+The TV would therefore be outputting random electromagnetic radiation. The TV
+itself generated some of this random electromagnetic radiation. Other
+electronic devices generated it, too. And, coolest of all, around 1% of it came
+from the `cosmic microwave background`_ generated from the Big Bang!
 
 Sources:
 
@@ -145,17 +146,20 @@ Sources:
 * `Analog television <https://en.wikipedia.org/wiki/Analog_television>`_
 
 While doing this research, I realized that TV static was often black and white.
-Maybe I had an unusual TV that output static with color, or maybe my memory is mistaken.
-Or maybe, if I animate the static at a fast frame rate, it will start to look black and
-white…?
+Maybe I had an unusual TV that output static with color, or maybe my memory is
+mistaken. I kinda remember that static looked black and white from afar, but if you
+got up close, you saw colors. So maybe if I animate the static at a fast rate, use a
+lot of pixels, and look at it from afar, it will look black and white…?
 
 -----------------------
 Animating the TV static
 -----------------------
 
 OK, back to hacking. Once I realized that my random grid of colors looked
-like TV static, I knew I had to try to animate the favicon to recreate the
-full experience. Which brings me back to my initial server-side implementation…
+like a frame of TV static, I knew I had to try to recreate the full TV static
+experience by animating my favicon. Is that even possible? You would think that
+browser vendors might not allow it, because it could potentially be very distracting
+and annoying. Let's find out!
 
 ---------------
 Prior art redux

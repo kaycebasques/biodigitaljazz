@@ -11,7 +11,8 @@ walking: can I auto-generate a random favicon on every pageview?
 Prior art
 ---------
 
-Don't {know,care}. I'm doing this for fun. I enjoy encountering new ideas through the process of creation.
+Don't know, don't care. I'm doing this for fun. I enjoy encountering new ideas
+through the process of creation.
 
 -------------
 Random colors
@@ -120,74 +121,47 @@ like this:
            referrerpolicy="strict-origin-when-cross-origin"
            allowfullscreen></iframe>
 
-That's TV static. So what the heck is it? The gist of the phenomenon
-is that old TVs are always trying to output video and audio; static
-is what you get when no real signal exists. To the TV, "putting on channel 2"
-actually meant "receive the video signal that's being broadcast at 55.25 MHz and
-the audio signal that's being broadcast at 59.75 MHz". Static is the TV just playing
-whatever random electrical signals that it's picking up. Some of it comes from components
-on the TV itself, some of it comes from 
+That's TV static. So what the heck is it?
 
-TODO: black & white
+First, channels. To the TV, "putting on channel 2" meant tuning the video
+receiver to a specific frequency and the audio receiver to another specific
+frequency and then outputting the data received at those specific frequencies.
+
+.. _cosmic microwave background: https://en.wikipedia.org/wiki/Cosmic_microwave_background
+
+Now, static. The gist of the phenomenon is that old TVs always output whatever
+their audio and video receivers pick up, and static is what happens when no real
+data is being broadcast over the channel. The TV is outputting the random electromagnetic
+radiation that happens to be occurring on the frequencies that it's tuned to receive.
+The TV itself generates some of this random electromagnetic radiation. Other electronic
+devices generate it, too. And, most cool of all, around 1% of it comes from the
+`cosmic microwave background`_ generated from the Big Bang!
 
 Sources:
 
 * `The evolution of television <https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television>`_
 * `Noise (video) <https://en.wikipedia.org/wiki/Noise_(video)>`_
 * `Why don't TVs have static and white noise anymore? <https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/>`_
+* `Analog television <https://en.wikipedia.org/wiki/Analog_television>`_
 
-.. https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television?hl=en-US
-.. https://www.highdefdigest.com/news/show/tv-static-comes-from-a-surprising-source-the-big-bang/39610
-.. https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/
-.. https://youtu.be/P_Oh7HizY5I
+While doing this research, I realized that TV static was often black and white.
+Maybe I had an unusual TV that output static with color, or maybe my memory is mistaken.
+Or maybe, if I animate the static at a fast frame rate, it will start to look black and
+white…?
 
 -----------------------
 Animating the TV static
 -----------------------
 
-Back to the discussion about implementation. Once I realized that a grid
-of random colors looked like a frame of TV static, I knew I had to try to
-animate it to get the full TV static effect. I wrote a little JavaScript to
-fetch a new favicon every millisecond, but my server could not keep up with
-that speed. Also, it generated an annoying amount of network traffic. I tried
-reducing it to 
-
-
+OK, back to hacking. Once I realized that my random grid of colors looked
+like TV static, I knew I had to try to animate the favicon to recreate the
+full experience. Which brings me back to my initial server-side implementation…
 
 ---------------
 Prior art redux
 ---------------
 
-Now that I'm done with my own explorations, let's search 
-
--------------
-Random colors
--------------
-
-
-My first idea 
-
-In the HTML the favicon was fetched from an external web service running on
-
-In my first attempt the favicon was fetched from an external web service:
-
-.. code-block:: html
-
-   …
-   <head>
-       …
-       <link id="favicon" rel="icon" type="image/x-icon" href="https://biodigitaljazz.onrender.com/favicon.ico">
-       …
-   </head>
-   …
-
-
-
-
-
-What if I just put a random color in each pixel of the 16x16 grid? Rust is cool.
-Can I do it in Rust? With a lot of help from my friends Gemini and Claude I did
-eventually get something working.
+…
 
 .. _server:
 

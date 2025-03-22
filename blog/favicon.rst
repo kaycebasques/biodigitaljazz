@@ -141,8 +141,11 @@ from the `cosmic microwave background`_ generated from the Big Bang!
 Sources:
 
 * `The evolution of television <https://socialsci.libretexts.org/Bookshelves/Communication/Journalism_and_Mass_Communication/Book%3A_Mass_Communication_Media_and_Culture/09%3A_Television/9.01%3A_The_Evolution_of_Television>`_
+
 * `Noise (video) <https://en.wikipedia.org/wiki/Noise_(video)>`_
+
 * `Why don't TVs have static and white noise anymore? <https://www.howtogeek.com/840090/why-dont-tvs-have-static-and-white-noise-anymore/>`_
+
 * `Analog television <https://en.wikipedia.org/wiki/Analog_television>`_
 
 While doing this research, I realized that TV static was often black and white.
@@ -155,11 +158,110 @@ lot of pixels, and look at it from afar, it will look black and white…?
 Animating the TV static
 -----------------------
 
-OK, back to hacking. Once I realized that my random grid of colors looked
-like a frame of TV static, I knew I had to try to recreate the full TV static
-experience by animating my favicon. Is that even possible? You would think that
-browser vendors might not allow it, because it could potentially be very distracting
-and annoying. Let's find out!
+Once I realized that my random grid of colors looked like a frame of TV static,
+my mission became to fully recreate the TV static experience by animating my favicon.
+Is that even possible? You would think that browser vendors might not allow it,
+because it could potentially be very distracting and annoying. Only one way to
+find out!
+
+At this point, I ditched the server-side implementation. I'll probably need tens
+of frames of static every millisecond. Going to the network for every frame would
+generate a stupid amount of network traffic. There are of course ways to make it work,
+but there's no reason for me to be married to server rendering in this silly toy project.
+
+Time for some JavaScript. The basic idea is to render the random colors into
+a canvas and then use a data URL to convert that into an image:
+
+.. code-block:: html
+
+   <img id="random_16x16" width="16" height="16"/>
+
+   <script>
+     (() => {
+       const canvas = document.createElement('canvas');
+       canvas.width = 16;
+       canvas.height = 16;
+       const ctx = canvas.getContext('2d');
+       for (let y = 0; y < canvas.height; y++) {
+         for (let x = 0; x < canvas.width; x++) {
+           const r = Math.floor(Math.random() * 256);
+           const g = Math.floor(Math.random() * 256);
+           const b = Math.floor(Math.random() * 256);
+           ctx.fillStyle = `rgb(${r},${g},${b})`;
+           ctx.fillRect(x, y, 1, 1);
+         }
+       }
+       const data = canvas.toDataURL('image/png');
+       document.querySelector("#random_16x16").src = data;
+     })();
+   </script>
+
+I tried combining this with ``setInterval`` to generate a new frame
+of static every millisecond but it wasn't fast enough. Also, my computer
+fan started to sound like a jet engine revving up for takeoff, so I assume
+it required a stupid amount of CPU time.
+
+So I started to think about that humble yet fascinating feature of the
+web platform known as data URLs. There's something magical about the fact
+that I can render an image into a canvas and then convert that into a URL.
+What do those data URLs look like? How do they work? Is there a way for me
+to just manipulate data URLs directly in order to generate my random frames
+of TV static in a way that doesn't require a lot of compute??
+
+-------------------------------------
+Journey to the center of the data URL
+-------------------------------------
+
+First, let's just generate 10 random frames and log out each frame's data URL
+to see if we can spot any obvious patterns:
+
+.. raw:: html
+
+   <button id="generate">Generate</button>
+   <div id="laboratory"></div>
+
+   <script>
+     (() => {
+       const canvas = document.createElement('canvas');
+       canvas.width = 16;
+       canvas.height = 16;
+       const ctx = canvas.getContext('2d');
+       const lab = document.querySelector('#laboratory');
+       document.querySelector('#generate').addEventListener('click', () => {
+         lab.innerHTML = '';
+         for (let n = 0; n < 10; n++) {
+           for (let y = 0; y < canvas.height; y++) {
+             for (let x = 0; x < canvas.width; x++) {
+               const r = Math.floor(Math.random() * 256);
+               const g = Math.floor(Math.random() * 256);
+               const b = Math.floor(Math.random() * 256);
+               ctx.fillStyle = `rgb(${r},${g},${b})`;
+               ctx.fillRect(x, y, 1, 1);
+             }
+           }
+           const data = canvas.toDataURL('image/png');
+           lab.innerHTML += `<p>Image ${n + 1}</p>
+             <img src="${data}"/>
+             <p>Length of data URL: ${data.length}</p>
+             <pre style="overflow-x: scroll"><code>${data}</code></pre>
+           `;
+         }
+       });
+     })();
+   </script>
+
+Patterns:
+
+* The data URLs are usually 1390 characters long, although lengths of 1386, 1394,
+  and 1398 also occur sometimes.
+
+* They all start with ``data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAA``.
+
+I can't see any other obvious patterns. Time to peruse some specs!
+
+* `data: URLs <https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Schemes/data>`_
+
+* `RFC 2397: The "data" URL scheme <https://www.rfc-editor.org/rfc/rfc2397>`_
 
 ---------------
 Prior art redux

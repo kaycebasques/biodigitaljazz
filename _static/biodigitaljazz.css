@@ -58,6 +58,22 @@ footer pre code {
     font-family: monospace;
 }
 
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
 img {
     max-width: 100%;
 }

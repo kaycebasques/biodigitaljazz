@@ -4,6 +4,26 @@ Home
 
 Adventures in {hard,soft,wet}ware
 
+--------
+Embedded
+--------
+
+* :ref:`asm`
+
+--------
+Hardware
+--------
+
+* :ref:`pcrowdoodle`
+
+* :ref:`transistor`
+
+-------
+Systems
+-------
+
+* :ref:`systemantics`
+
 ---
 Web
 ---

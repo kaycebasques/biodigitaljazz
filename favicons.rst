@@ -416,9 +416,9 @@ on each frame:
 I've known about `requestAnimationFrame`_ for a long time but I think this is the first time
 I've ever truly needed it. Achievement unlocked.
 
-------------------------------------------------------
-For the love of Glob, just tell me if it works already
-------------------------------------------------------
+----------------------------------------------
+For the love of Glob, just tell me if it works
+----------------------------------------------
 
 Click **Animate** and see for yourself!
 

@@ -12,40 +12,30 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
-    section {
-        div.highlight {
-            background-color: floralwhite;
-	    pre {
-                font-family: "Noto Sans Mono", monospace;
-		font-size: 0.9em;
-            }
-        }
-        li {
-            p {
-                margin: 0;
-            }
-        }
-	pre {
-            margin-block-end: 0;
-            margin-block-start: 0;
-            padding-block-end: 1em;
-            padding-block-start: 1em;
-        }
-    }
 }
 
 blockquote {
     font-style: italic;
 }
 
+code {
+    font-size: 0.9em;
+}
+
 div.highlight {
-    background-color: lightgrey;
+    background-color: #eeeeee;
     margin: 1em 0 0 0;
     padding: 1em;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 0.9em;
 }
 
 div.highlight pre {
-    overflow-x: scroll;
+    overflow-x: auto;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding-block-end: 1em;
+    padding-block-start: 1em;
 }
 
 footer {

@@ -14,6 +14,10 @@ Web
    :maxdepth: 1
    :hidden:
 
-   blog/index
+   blog/asm
+   blog/transistor
+   blog/systemantics
+   blog/pcrowdoodle
    bookmarks
    contact
+   favicons

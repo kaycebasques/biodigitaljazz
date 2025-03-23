@@ -9,8 +9,8 @@ Generating random animated favicons
    <script>
      (() => {
        // Pre-fetch some data that will be needed later…
-       fetch('../_static/favicon_100x100.json');
-       fetch('../_static/favicon_16x16.json');
+       fetch('./_static/favicon_100x100.json');
+       fetch('./_static/favicon_16x16.json');
      })();
    </script>
 
@@ -445,11 +445,11 @@ Click **Animate** and see for yourself!
        }
        button.addEventListener('click', () => {
          if (button.textContent === 'Animate') {
-           fetch('../_static/favicon_100x100.json').then(response => response.json()).then(json => {
+           fetch('./_static/favicon_100x100.json').then(response => response.json()).then(json => {
              window.favicon_100x100 = json;
              img_request_id = requestAnimationFrame(animate_img);
            });
-           fetch('../_static/favicon_16x16.json').then(response => response.json()).then(json => {
+           fetch('./_static/favicon_16x16.json').then(response => response.json()).then(json => {
              window.favicon_16x16 = json;
              favicon_request_id = requestAnimationFrame(animate_favicon);
            });

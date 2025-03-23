@@ -176,6 +176,8 @@ Is that even possible? You would think that browser vendors might not allow it,
 because animated favicons could potentially be very distracting and annoying. Only
 one way to find out!
 
+(GIFs are an obvious possible solution but I'm not interested in that approach.)
+
 At this point, I ditched the server-side implementation. I'll probably need tens
 of frames of static every second. Going to the network for every frame would
 generate a stupid amount of network traffic. There are of course ways to make the
@@ -338,7 +340,7 @@ My naive idea was to just generate random data URLs, like this:
    (() => {
      let valid_base64_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
      const preamble = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAA71JREFUOE8FwQ';
-     const total_size = 1390;
+     const total_size = 1394;
      const chars_needed = total_size - preamble.length;
      let data_url = preamble;
      for (let n = 0; n < chars_needed; n++) {
@@ -358,7 +360,7 @@ My naive idea was to just generate random data URLs, like this:
    })();
 
 But the Chrome DevTools console error'd out, stating that my URLs were invalid. So, for this approach to work,
-I would need to understand how to properly serialize PNG data as Base64. I don't have time for that.
+I would need to understand how to properly serialize PNG data as Base64. I'm not interested in going that deep.
 Also, the performance of this approach is probably terrible. Constructing each data URL requires a lot of calls
 to ``Math.random()``.
 
@@ -368,8 +370,8 @@ I have a simpler idea.
 Randomly display pre-generated data URLs
 ----------------------------------------
 
-The plan is "batch process" a bunch of data URLs upfront
-and save these into a file:
+The plan is to "batch process" a bunch of data URLs upfront and save these into
+a file:
 
 .. code-block:: js
 
@@ -414,9 +416,9 @@ on each frame:
 I've known about `requestAnimationFrame`_ for a long time but I think this is the first time
 I've ever truly needed it. Achievement unlocked.
 
--------
-Results
--------
+------------------------------------------------------
+For the love of Glob, just tell me if it works already
+------------------------------------------------------
 
 Click **Animate** and see for yourself!
 
@@ -461,6 +463,8 @@ Click **Animate** and see for yourself!
      })();
    </script>
 
+The answer is a resounding "maybe" depending on what browser/OS you're viewing my site from.
+
 On my laptop (Chrome on Debian) the in-page animation directly above this
 text renders at a high frame rate. The favicon, however, renders at a much lower rate,
 even though the underlying logic is the same. It technically does animate, though!
@@ -480,12 +484,22 @@ You can kinda animate favicons at a slow frame rate in limited situations. I hon
 wouldn't be surprised if browser vendors see this post and go "oh, that's a bug" and then
 lock down my hack. So maybe have fun with it while you still can!
 
----------------
-Prior art redux
----------------
+-------------------------
+Appendix: prior art redux
+-------------------------
 
 Now that I'm done with my own exploration, I don't mind searching around the world wide
 web and seeing what others have come up with…
+
+* `How to animate a favicon? <https://stackoverflow.com/questions/1837261/how-to-animate-a-favicon>`_
+
+* `The making of an animated favicon <https://css-tricks.com/the-making-of-an-animated-favicon/>`_
+
+* `Animated SVG favicons <https://blog.tomayac.com/2019/12/01/animated-svg-favicons/>`_
+
+* `Create an animated SVG favicon with CSS <https://natclark.com/tutorials/css-animated-favicon/>`_
+
+* `Don't allow animated favicons <https://news.ycombinator.com/item?id=30206278>`_
 
 .. _server:
 

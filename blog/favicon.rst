@@ -451,22 +451,31 @@ Click **Animate** and see for yourself!
      })();
    </script>
 
-In my browser (Google Chrome on Debian) the in-page animation directly above this
+On my laptop (Chrome on Debian) the in-page animation directly above this
 text renders at a high frame rate. The favicon, however, renders at a much lower rate,
-even thought the underlying logic is the same.
+even though the underlying logic is the same. It technically does animate, though!
+On iPad, the favicon doesn't animate whatsoever. On smartphone browsers, you usually
+only see the favicon when typing a URL or switching tabs. Which kinda sucks. Favicons
+are fun. I wish smartphone browsers would show them more regularly. Anyways, the animation
+doesn't work in the smartphone browsers that I tried.
 
-Direct answers to some of the questions that came up during this exploration:
+------------------
+More fun to be had
+------------------
 
-* Can you generate a new favicon on every page visit? Absolutely. There are a lot
-  of interesting possibilities here.
+You can totally auto-generate a new favicon for every page visit. There are a lot
+of cool possibilities here. E.g. customized favicons for each user.
 
-* Can you animate favicons? 
+You can kinda animate favicons at a slow frame rate in limited situations. I honestly
+wouldn't be surprised if browser vendors see this post and go "oh, that's a bug" and then
+lock down my hack. So maybe have fun with it while you still can!
 
 ---------------
 Prior art redux
 ---------------
 
-…
+Now that I'm done with my own exploration, I don't mind searching around the world wide
+web and seeing what others have come up with…
 
 .. _server:
 

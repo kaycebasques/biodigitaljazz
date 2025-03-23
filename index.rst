@@ -4,9 +4,9 @@ Home
 
 Adventures in {hard,soft,wet}ware
 
---------------
-World-wide web
---------------
+---
+Web
+---
 
 * :ref:`favicon`
 
@@ -16,3 +16,4 @@ World-wide web
 
    blog/index
    bookmarks
+   contact

@@ -26,7 +26,7 @@ html_extra_path = ["rss.xml"]
 html_permalinks_icon = "#"
 
 # Extensions
-extensions = ["sphinx_reredirects"]
+extensions = ["matplotlib.sphinxext.plot_directive", "sphinx_reredirects"]
 
 # Redirects
 redirects = {
@@ -40,3 +40,6 @@ redirects = {
 
 # Code
 pygments_style = "sphinx"
+
+# matplotlib
+plot_html_show_formats = False

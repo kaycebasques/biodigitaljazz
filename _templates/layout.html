@@ -27,57 +27,17 @@
             <p><a href="/_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4">Bio-digital jazz, man</a></p>
         </footer>
         <script>
-            // const INTERVAL_MS = 10;
-            // async function updateFavicon() {
-            //     const response = await fetch(`https://biodigitaljazz.onrender.com/favicon.ico?t=${Date.now()}`);
-            //     const blob = await response.blob();
-            //     const url = URL.createObjectURL(blob);
-            //     document.querySelector('#favicon').href = url;
-            //     window.setTimeout(updateFavicon, INTERVAL_MS);
-            // } 
-            // window.setTimeout(updateFavicon, INTERVAL_MS);
-
-// function setRandomFavicon() {
-//   // 1. Create a canvas element
-//   const canvas = document.createElement('canvas');
-//   canvas.width = 16;
-//   canvas.height = 16;
-// 
-//   // 2. Get the 2D rendering context
-//   const ctx = canvas.getContext('2d');
-// 
-//   // 3. Generate random RGB values and draw pixels
-//   for (let y = 0; y < canvas.height; y++) {
-//     for (let x = 0; x < canvas.width; x++) {
-//       // Generate random values for red, green, and blue (0-255)
-//       const r = Math.floor(Math.random() * 256);
-//       const g = Math.floor(Math.random() * 256);
-//       const b = Math.floor(Math.random() * 256);
-// 
-//       // Set the fill style to the random RGB color
-//       ctx.fillStyle = `rgb(${r},${g},${b})`;
-// 
-//       // Draw a 1x1 rectangle at the current position
-//       ctx.fillRect(x, y, 1, 1);
-//     }
-//   }
-// 
-//   // 4. Convert the canvas to a Data URL (PNG format is widely supported)
-//   const faviconDataURL = canvas.toDataURL('image/x-icon');
-// 
-//   // 5. Update the favicon link element
-//   let faviconLink = document.querySelector("#favicon");
-// 
-//   // Set the href to the Data URL
-//   faviconLink.href = faviconDataURL;
-// }
-// 
-// // Call the function to set the random favicon
-// setRandomFavicon();
-// 
-// // Optional: Set it to change every few seconds
-// setInterval(setRandomFavicon, 1); // Change every 2 seconds
-
+            const favicon = document.querySelector('#favicon');
+            function step() {
+                const index = Math.floor(Math.random() * window.biodigitaljazz.length);
+                favicon.href = window.biodigitaljazz[index];
+                requestAnimationFrame(step);
+            }
+            fetch('{{ pathto('_static/favicon.json', 1) }}').then(response => response.json()).then(json => {
+                window.biodigitaljazz = json;
+                favicon.type = 'image/png';
+                requestAnimationFrame(step);
+            });
         </script>
     </body>
 </html>

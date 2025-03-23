@@ -4,8 +4,8 @@
 Generating random animated favicons
 ===================================
 
-This blog post is a meandering exploration of a random idea I had while
-walking: can I auto-generate a random favicon on every pageview?
+This blog post is a meandering exploration of an idea I had while walking:
+can I auto-generate a random favicon on every pageview?
 
 ---------
 Prior art
@@ -168,9 +168,9 @@ one way to find out!
 
 At this point, I ditched the server-side implementation. I'll probably need tens
 of frames of static every second. Going to the network for every frame would
-generate a stupid amount of network traffic. I could probably figure out a way to
-make the server-side implementation work, but this is just a silly project for fun
-so I'm going to switch to the more obvious solution: client-side JavaScript.
+generate a stupid amount of network traffic. There are of course ways to make the
+server-side implementation work, but a client-side JavaScript approach seems much
+more straightforward.
 
 The basic idea is to render the random colors into a canvas and then use a data URL
 to convert that into an image:
@@ -198,15 +198,16 @@ to convert that into an image:
    </script>
 
 I tried combining this with ``setInterval`` to generate a new frame
-of static every millisecond but it wasn't fast enough. Also, my computer
-fan started to sound like a jet engine revving up for takeoff, so I assume
-it required a stupid amount of CPU time.
+of static every millisecond but my computer started to sound like a jet
+engine revving up for takeoff, so I assume this approach consumes a stupid
+amount of CPU.
 
-So I started to think about that humble yet fascinating feature of the
+At this point I started pondering that humble yet fascinating feature of the
 web platform known as data URLs. There's something magical about the fact
 that I can render an image into a canvas and then convert that into a URL.
 What do those data URLs look like? How do they work? Is there a way for me
-to just manipulate data URLs directly to reduce compute cost?
+to just manipulate data URLs directly to achieve the TV static effect
+efficiently?
 
 ---------------------------
 Shallow dive into data URLs
@@ -450,9 +451,16 @@ Click **Animate** and see for yourself!
      })();
    </script>
 
-On my computer (Google Chrome on Debian) the in-page animation directly above this text
-seems to render at a high FPS rate. The favicon, however, renders at a much lower FPS
-rate.
+In my browser (Google Chrome on Debian) the in-page animation directly above this
+text renders at a high frame rate. The favicon, however, renders at a much lower rate,
+even thought the underlying logic is the same.
+
+Direct answers to some of the questions that came up during this exploration:
+
+* Can you generate a new favicon on every page visit? Absolutely. There are a lot
+  of interesting possibilities here.
+
+* Can you animate favicons? 
 
 ---------------
 Prior art redux

@@ -4,6 +4,16 @@
 Generating random animated favicons
 ===================================
 
+.. raw:: html
+
+   <script>
+     (() => {
+       // Pre-fetch some data that will be needed later…
+       fetch('../_static/favicon_100x100.json');
+       fetch('../_static/favicon_16x16.json');
+     })();
+   </script>
+
 This blog post is a meandering exploration of an idea I had while walking:
 can I auto-generate a random favicon on every pageview?
 
@@ -499,8 +509,7 @@ In the HTML the favicon was fetched from my web app running on `Render`_:
 
 .. code-block:: rs
 
-   // I'm a Rust n00b and I leaned on Gemini and Claude to generate a lot of this
-   // code, so it's probably crap (but at least it was working crap!)
+   // Caution: I'm a Rust n00b and I leaned on LLMs to generate a lot of this code
 
    #[macro_use]
    extern crate rocket;

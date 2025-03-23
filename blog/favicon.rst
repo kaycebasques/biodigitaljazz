@@ -27,8 +27,8 @@ In my first implementation, I generated the favicon server-side. You can see the
 code in :ref:`server` but I quickly realized that this approach wouldn't work. Or at least,
 it was sub-optimal. More on that later.
 
-When I eventually got this first implementation working, I was pretty excited
-to see the result:
+It took awhile, but I eventually got the server-side implementation working and
+was pretty excited to see the result:
 
 .. raw:: html
 
@@ -54,8 +54,8 @@ to see the result:
      })();
    </script>
 
-TV static! A grid of random colors looks like TV static.
-Obvious in hindsight, but I did not expect that.
+TV static! My grid of random colors (kinda) looks like TV static.
+Obvious in hindsight, but I did not see that coming.
 
 16x16 (the size of a basic favicon) is a little hard to see.
 Here's 100x100:
@@ -123,20 +123,22 @@ like this:
 
 That's TV static. So what the heck is it?
 
-It's easier if we start with channels. To the TV, "putting on channel 2" meant
-tuning the video receiver to a specific frequency and the audio receiver to
-another specific frequency and then outputting the data received at those
-specific frequencies.
+It's easier if we start with channels. The mechanics are much closer to AM and
+FM radio than I realized. To the TV, "putting on channel 2" meant tuning the
+TV's video receiver to a specific frequency and the audio receiver to another
+specific frequency and then outputting the data received at those specific
+frequencies.
 
 .. _cosmic microwave background: https://en.wikipedia.org/wiki/Cosmic_microwave_background
 
 Now, static. The gist of the phenomenon is that old TVs were always outputting
 whatever their audio and video receivers were picking up, and sometimes there
-wasn't actually any meaningful data being broadcast over a particular channel.
-The TV would therefore be outputting random electromagnetic radiation. The TV
-itself generated some of this random electromagnetic radiation. Other
-electronic devices generated it, too. And, coolest of all, around 1% of it came
-from the `cosmic microwave background`_ generated from the Big Bang!
+wasn't actually any meaningful data being broadcast over the particular channel
+that the TV was receiving. The TV would therefore be outputting random
+electromagnetic radiation (RER). Where did the RER come from? The TV itself
+generated some. Other electronic devices generated some, too. And, coolest of
+all, around 1% of it came from the `cosmic microwave background`_ of the Big
+Bang!
 
 Sources:
 
@@ -351,12 +353,12 @@ to ``Math.random()``.
 
 I have a simpler idea.
 
-------------------------------------------------------------------
-Generate a bunch of valid data URLs and then display them randomly
-------------------------------------------------------------------
+----------------------------------------
+Randomly display pre-generated data URLs
+----------------------------------------
 
-Basically, I'll use my first implementation to "batch process" a
-bunch of valid data URLs:
+The plan is "batch process" a bunch of data URLs upfront
+and save these into a file:
 
 .. code-block:: js
 
@@ -378,27 +380,79 @@ bunch of valid data URLs:
      const data = canvas.toDataURL('image/png');
      urls.push(data);
    }
-   // Save the URLs into a file…
+   // Save `urls` into a file…
 
+And then load the data URLs and randomly display a new one
+on each frame:
+
+.. code-block:: js
+
+   const favicon = document.querySelector('#favicon');
+   function render() {
+     const random_index = Math.floor(Math.random() * window.favicon_data.length);
+     favicon.href = window.favicon_data[random_index];
+     requestAnimationFrame(render);
+   }
+   fetch('/favicon_data.json').then(response => response.json()).then(json => {
+     window.favicon_data = json;
+     requestAnimationFrame(render);
+   });
+
+.. _requestAnimationFrame: https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame
+
+I've known about `requestAnimationFrame`_ for a long time but I think this is the first time
+I've ever truly needed it. Achievement unlocked.
+
+-------
+Results
+-------
+
+Click **Animate** and see for yourself!
 
 .. raw:: html
 
-   <img id="static_100x100"/>
+   <button id="animate">Animate</button>
+   <img id="favicon_100x100" style="display: block; padding: 1em 0;" height="100" width="100"/>
    <script>
      (() => {
-       const img = document.querySelector('#static_100x100');
-       function step() {
-         const index = Math.floor(Math.random() * window.static_100x100.length);
-         img.src = window.static_100x100[index];
-         requestAnimationFrame(step);
+       const favicon = document.querySelector('#favicon');
+       let favicon_request_id = null;
+       const img = document.querySelector('#favicon_100x100');
+       let img_request_id = null;
+       const button = document.querySelector('#animate');
+       function animate_favicon() {
+         const random_index = Math.floor(Math.random() * window.favicon_16x16.length);
+         favicon.href = window.favicon_16x16[random_index];
+         favicon_request_id = requestAnimationFrame(animate_favicon);
        }
-       fetch('../_static/static_100x100.json').then(response => response.json()).then(json => {
-         window.static_100x100 = json;
-         requestAnimationFrame(step);
+       function animate_img() {
+         const random_index = Math.floor(Math.random() * window.favicon_100x100.length);
+         img.src = window.favicon_100x100[random_index];
+         img_request_id = requestAnimationFrame(animate_img);
+       }
+       button.addEventListener('click', () => {
+         if (button.textContent === 'Animate') {
+           fetch('../_static/favicon_100x100.json').then(response => response.json()).then(json => {
+             window.favicon_100x100 = json;
+             img_request_id = requestAnimationFrame(animate_img);
+           });
+           fetch('../_static/favicon_16x16.json').then(response => response.json()).then(json => {
+             window.favicon_16x16 = json;
+             favicon_request_id = requestAnimationFrame(animate_favicon);
+           });
+           button.textContent = 'Stop';
+         } else {
+           cancelAnimationFrame(favicon_request_id);
+           cancelAnimationFrame(img_request_id);
+           button.textContent = 'Animate';
+         }
        });
      })();
    </script>
 
+On my computer (Google Chrome on Debian) the in-page animation directly above this text
+seems to render at a high FPS rate. The favicon, however, renders at a much lower FPS
+rate.
 
 ---------------
 Prior art redux
@@ -433,16 +487,16 @@ In the HTML the favicon was fetched from my web app running on `Render`_:
 
    #[macro_use]
    extern crate rocket;
-   
+
    use image::{ImageBuffer, Rgb};
    use rand::prelude::*;
    use rocket::Request;
    use rocket::http::{ContentType, Header, Status};
    use rocket::response::{self, Responder, Response};
    use std::io::Cursor;
-   
+
    pub struct Favicon<R>(pub R);
-  
+
    // For anything beyond super basic responses it seems like you need
    // to implement one of these responder things? It felt pretty
    // convoluted, IMO…
@@ -462,7 +516,7 @@ In the HTML the favicon was fetched from my web app running on `Render`_:
                .ok()
        }
    }
-   
+
    fn generate_favicon() -> Result<Vec<u8>, image::ImageError> {
        let mut rng = rand::rng();
        let mut img = ImageBuffer::new(16, 16);
@@ -476,7 +530,7 @@ In the HTML the favicon was fetched from my web app running on `Render`_:
        img.write_to(&mut buffer, image::ImageFormat::Ico)?;
        Ok(buffer.into_inner())
    }
-   
+
    #[get("/favicon.ico")]
    fn get_favicon() -> Result<Favicon<(Status, (ContentType, Vec<u8>))>, Status> {
        match generate_favicon() {
@@ -484,7 +538,7 @@ In the HTML the favicon was fetched from my web app running on `Render`_:
            Err(_) => Err(Status::InternalServerError),
        }
    }
-   
+
    #[launch]
    fn rocket() -> _ {
        rocket::build().mount("/", routes![get_favicon])

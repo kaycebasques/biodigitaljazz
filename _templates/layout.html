@@ -26,18 +26,5 @@
             <p>© 2025 Kayce Basques</p>
             <p><a href="/_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4">Bio-digital jazz, man</a></p>
         </footer>
-        <script>
-            const favicon = document.querySelector('#favicon');
-            function step() {
-                const index = Math.floor(Math.random() * window.biodigitaljazz.length);
-                favicon.href = window.biodigitaljazz[index];
-                requestAnimationFrame(step);
-            }
-            fetch('{{ pathto('_static/favicon.json', 1) }}').then(response => response.json()).then(json => {
-                window.biodigitaljazz = json;
-                favicon.type = 'image/png';
-                requestAnimationFrame(step);
-            });
-        </script>
     </body>
 </html>

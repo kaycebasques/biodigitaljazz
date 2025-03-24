@@ -1,69 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Bio-digital jazz, man</title>
-        <link>https://biodigitaljazz.net</link>
+  <channel>
+    <title>Bio-digital jazz, man</title>
+    <link>https://biodigitaljazz.net</link>
 	<description>
-            Given that you're following this blog, and the fact that you even
-            use RSS in the first place, you may be intrigued to know that I
-            "hand-crafted" this RSS feed. Why do we always set up some
-            convoluted auto-generation pipeline for RSS? "It's just text files,
-            y'all."
-	</description>
-        <language>en-us</language>
-  <pubDate>Sun, 17 Nov 2024 09:03:03 -0700</pubDate>
-	<atom:link href="https://biodigitaljazz.net/rss.xml" rel="self"
-		type="application/rss+xml"/>
-
-
-<item>
-  <title>Books about the history of computing</title>
-  <link>https://biodigitaljazz.net/blog/history.html</link>
-  <description>
-    A list of books about the history of computing, most of which I have not read.
-  </description>
-  <pubDate>Sun, 17 Nov 2024 09:03:03 -0700</pubDate>
-  <guid>https://biodigitaljazz.net/blog/diff2html.html</guid>
-</item>
-
-
-        <item>
-            <title>pCrowDoodle, my "desirable difficulty" laptop</title>
-	    <link>https://biodigitaljazz.net/blog/pcrowdoodle.html</link>
-	    <description>
-                First impressions of my RPi laptop.
-            </description>
-	    <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/pcrowdoodle.html</guid>
-        </item>
-        <item>
-            <title>Axioms of Systemantics</title>
-	    <link>https://biodigitaljazz.net/blog/systemantics.html</link>
-	    <description>
-                Systemantics is a silly little book by John Gall with some
-                interesting ideas about why systems fail.
-            </description>
-	    <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/systemantics.html</guid>
-        </item>
-        <item>
-            <title>Transistor first reported as "Little Brain Cell"</title>
-	    <link>https://biodigitaljazz.net/blog/transistor.html</link>
-	    <description>
-                Time magazine's first report on the transistor, back in 1948.
-            </description>
-	    <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/transistor.html</guid>
-        </item>
-        <item>
-            <title>How to program an Arduino Uno in Assembly</title>
-	    <link>https://biodigitaljazz.net/blog/asm.html</link>
-	    <description>
-                An end-to-end tutorial on how to create a blinky program for
-                the Arduino Uno R3 in Assembly.
-            </description>
-	    <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-	    <guid>https://biodigitaljazz.net/blog/asm.html</guid>
-        </item>
-    </channel>
+	    Adventures in {hard,soft,wet}ware
+    </description>
+    <language>en-us</language>
+    <pubDate>Sun, 17 Nov 2024 09:03:03 -0700</pubDate>
+	<atom:link href="https://biodigitaljazz.net/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>pCrowDoodle, my "desirable difficulty" laptop</title>
+      <link>https://biodigitaljazz.net/pcrowdoodle.html</link>
+      <description>First impressions of my RPi laptop.</description>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 -0700</pubDate>
+      <guid>https://biodigitaljazz.net/pcrowdoodle.html</guid>
+    </item>
+    <item>
+      <title>Axioms of Systemantics</title>
+      <link>https://biodigitaljazz.net/systemantics.html</link>
+      <description>
+        Some interesting ideas about why systems fail.
+      </description>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 -0700</pubDate>
+      <guid>https://biodigitaljazz.net/systemantics.html</guid>
+    </item>
+    <item>
+      <title>Transistor first reported as "Little Brain Cell"</title>
+      <link>https://biodigitaljazz.net/transistor.html</link>
+      <description>
+        Time magazine's first report on the transistor, back in 1948.
+      </description>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 -0700</pubDate>
+      <guid>https://biodigitaljazz.net/transistor.html</guid>
+    </item>
+    <item>
+      <title>How to program an Arduino Uno in Assembly</title>
+      <link>https://biodigitaljazz.net/asm.html</link>
+      <description>
+        How to create a blinky program for the Arduino Uno R3 in Assembly.
+      </description>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 -0700</pubDate>
+      <guid>https://biodigitaljazz.net/asm.html</guid>
+    </item>
+  </channel>
 </rss>

@@ -4,24 +4,10 @@
 Transistor first reported as "Little Brain Cell"
 ================================================
 
-*2023 Nov 28*
-
-.. _interview: https://www.latent.space/p/semianalysis
-
 .. _Chip War: https://www.christophermiller.net/semiconductors-1
 
-Last week I listened to the Latent Space `interview`_ with "That
-SemiAnalysis Guy". His name is Dylan Patel but I'm going to keep calling him
-That SemiAnalysis Guy because it tickles my brain. The interview was great! It
-motivated me to finally learn more about the hardware industry. At the end of
-the interview That SemiAnalysis Guy recommends `Chip War`_ by Chris Miller, who
-will hereby be called "That Chip War Guy". The book was on my radar but I never
-got around to reading it because I was pretty turned off by the clickbaity
-title. I'm only 50 pages in but it seems like the book is just a
-well-researched history of the semiconductor industry...?
-
-I love it when historians mention their primary sources. That Chip War Guy
-mentions some of the earliest reporting on the transistor, back in 1948:
+`Chip War`_ mentions some of the earliest reporting on the transistor,
+back in 1948:
 
     When Bell Labs held a press conference in June 1948 to announce that
     its scientists had invented the transistor, it wasn't easy to

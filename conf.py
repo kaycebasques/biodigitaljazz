@@ -1,8 +1,8 @@
 # Project
-project = "biodigitaljazz"
-copyright = "2024, Kayce Basques"
+project = "Bio-digital jazz, man"
 author = "Kayce Basques"
-release = "0.0.0"
+copyright = f"2025, {author}"
+release = "1.0.0"
 
 # Templates
 templates_path = ["_templates"]
@@ -31,11 +31,15 @@ extensions = ["matplotlib.sphinxext.plot_directive", "sphinx_reredirects"]
 # Redirects
 redirects = {
     "blog/ancestors": "https://web.archive.org/web/20250320231129/https://biodigitaljazz.net/blog/ancestors.html",
-    "blog/picam": "https://web.archive.org/web/20250320231430/https://biodigitaljazz.net/blog/picam.html",
+    "blog/asm": "../asm.html",
     "blog/diff2html": "https://web.archive.org/web/20250320231610/https://biodigitaljazz.net/blog/diff2html.html",
     "blog/littlebraincell": "./transistor.html",
-    "blog/stttgts": "https://web.archive.org/web/20250320235155/https://biodigitaljazz.net/blog/stttgts.html",
     "blog/history": "https://web.archive.org/web/20250320235612/https://biodigitaljazz.net/blog/history.html",
+    "blog/pcrowdoodle": "../pcrowdoodle.html",
+    "blog/picam": "https://web.archive.org/web/20250320231430/https://biodigitaljazz.net/blog/picam.html",
+    "blog/stttgts": "https://web.archive.org/web/20250320235155/https://biodigitaljazz.net/blog/stttgts.html",
+    "blog/systemantics": "../systemantics.html",
+    "blog/transistor": "../transistor.html",
 }
 
 # Code

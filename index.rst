@@ -1,43 +1,33 @@
+.. _home:
+
 ====
 Home
 ====
 
 Adventures in {hard,soft,wet}ware
 
---------
-Embedded
---------
+Embedded:
 
 * :ref:`asm`
 
---------
-Hardware
---------
+Hardware:
 
 * :ref:`pcrowdoodle`
 
 * :ref:`transistor`
 
--------
-Systems
--------
+Systems:
 
 * :ref:`systemantics`
-
----
-Web
----
-
-* :ref:`favicon`
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
-   blog/asm
-   blog/transistor
-   blog/systemantics
-   blog/pcrowdoodle
+   asm
+   transistor
+   systemantics
+   pcrowdoodle
    bookmarks
    contact
    favicons

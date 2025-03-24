@@ -18,8 +18,7 @@ back in 1948:
 
 .. _full text: https://content.time.com/time/subscriber/article/0,33009,804759,00.html
 
-I dug around a little bit and found the `full text`_. It's pretty short so I'll
-save you a click and reproduce it here in full:
+Here's the `full text`_:
 
     Vacuum tubes are the brain cells of modern technology. Each year, as
     machines take on more complex jobs, more & more vacuum tubes are needed.
@@ -57,7 +56,6 @@ nervous systems" and "little brain cells" from the `git-go`_.
 
 .. _scan: https://time.com/vault/issue/1948-07-12/page/56/
 
-I was also able to find a `scan`_ of the magazine. The web is a vast treasure
-trove of historical content.
+Here's a `scan`_ of the article:
 
 .. image:: transistor.png

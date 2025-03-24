@@ -6,7 +6,7 @@ Home
 
 Adventures in {hard,soft,wet}ware
 
-Embedded:
+Embedded development:
 
 * :ref:`asm`
 
@@ -16,7 +16,7 @@ Hardware:
 
 * :ref:`transistor`
 
-Systems:
+System theory:
 
 * :ref:`systemantics`
 

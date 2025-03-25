@@ -7,11 +7,11 @@ Axioms of Systemantics
 *2024 Jan 25*
 
 `Systemantics <https://en.wikipedia.org/wiki/Systemantics>`__ is a silly little
-book by John Gall with some interesting ideas about how systems (barely) work and why they fail. Below is
-a summary of the book's axioms.
+book by John Gall with some interesting ideas about how systems (barely) work
+and why they fail. Below is a summary of the book's axioms.
 
 (The sentences in bold are mostly verbatim from the book; I edited a few.
-Sentences in quotes are also from the book. Everything else is my own.)
+Full sentences in quotes are also from the book. Everything else is my own.)
 
 **Systems In General Work Poorly Or Not At All**. There is no single, hidden
 defect that's preventing your complex system from working; failure to function
@@ -32,7 +32,8 @@ didn't transfer correctly. Etc.
 as the negative of energy. See also `clonal anergy`_. "The sum total of
 problems facing the community has not changed. They have merely changed their
 form and relative importance." I've heard `The Macro Tourist`_ talk about risk
-in similar terms.
+in similar terms. Many financial products claim to eliminate risk. The reality
+is that they have just shifted the risk elsewhere.
 
 **Systems Tend To Grow And Encroach**. "A striking example is the
 "do-it-yourself" movement, instigated by managers of mass production in the
@@ -44,21 +45,16 @@ system of mass production was set up in the first place because such functions
 can be more cheaply and rapidly done under factory conditions."
 
 **Complicated Systems Produce Unexpected Outcomes**. DDT was introduced to
-improve crop yield and control disease and ended up dangerously thinning out
+improve crop yield and control disease. It ended up dangerously thinning out
 the shells of Bald Eagles.
 
-**Complex Systems Tend To Oppose Their Own Proper Function**. My favorite
-axiom. Your city has a problem with trash building up on the streets so it
-sets up a waste management company. The company starts out by collecting trash
-daily, but then they shift to a Tuesday-only schedule. Next, you get a notice
-saying that the company will no longer service your building unless you buy
-their standardized garbage cans (to ensure that the robotic arms on their
-trucks can pick them up). Eventually, the waste management union goes on strike
-and the trash starts piling up on the street again anyways.
+**Complex Systems Tend To Oppose Their Own Proper Function**.
 
 **People In Systems Do Not Do What The System Says They Are Doing**. The
 stated purpose of a king is to rule a country, but in reality they spend a lot
-of time fighting off usurpers.
+of time fighting off usurpers. Likewise, the stated purpose of a senator is
+to represent a state, but they often end up spending a lot of time focusing
+on their own reelection campaign instead.
 
 **The System Itself Does Not Do What It Says It Is Doing**. "*Example 1*.
 Doesn't the auto industry supply us with millions of new cars each year, even
@@ -101,7 +97,7 @@ Simple System That Works**. "The mechanism by which the transition from
 *working simple system* to *working complex system* takes place is not known.
 Few areas offer greater potential reward for truly first-rate research."
 
-**A Complex System Designed From Scratch Never Works**. The League Of Nations.
+**A Complex System Designed From Scratch Never Works**. E.g. the League of Nations.
 
 **In Complex Systems, Malfunction And Total Nonfunction May Not Be Detectable
 For Long Periods, If Ever**. "It would seem reasonable to suppose that...
@@ -118,10 +114,7 @@ judge it as a success or failure.
 
 .. _Selective Service System: https://www.sss.gov/register/why-is-selective-service-important/
 
-**A System Continues To Do Its Thing, Regardless Of Need**. The
-`Selective Service System`_ continues to require all 18-year-old male US
-citizens to register for the draft, even though the US hasn't had a draft
-in 51 years.
+**A System Continues To Do Its Thing, Regardless Of Need**.
 
 **Systems Develop Goals Of Their Own**.
 
@@ -129,11 +122,11 @@ in 51 years.
 
 **Complex Systems Usually Operate In Failure Mode**. Poke around any complex
 system and will you find sub-systems that seem to solve a particular problem
-but on closer investigation are found to not actually be working.
+but on closer investigation are found to not actually be working at all.
 
 **The Mode Of Failure From A Complex System Cannot Ordinarily Be Predicted
-From Its Structure**. When you go back and trace the actual financial
-mechanisms that failed in the 2008 and 2020 financial crises... it gets pretty
+From Its Structure**. E.g. when you go back and trace the actual financial
+mechanisms that failed in the 2008 and 2020 financial crises, it gets pretty
 weird.
 
 **The Crucial Variables Are Discovered By Accident**.

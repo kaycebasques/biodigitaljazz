@@ -56,6 +56,8 @@ Website design inspiration
 * `The Garden Of Computational Delights <https://arbesman.net/computationaldelights/>`_
 * `The Glitch Gallery <https://glitchgallery.org/>`_
 * `Random Web 1.0 Sites <https://news.ycombinator.com/item?id=36739920>`_
+* `Et tu, Grammarly? <https://web.archive.org/web/20250329154636/https://dbushell.com/2025/03/29/et-tu-grammarly/>`_
+* `Take This On-Call Rotation And Shove It <https://web.archive.org/save/https://www.scottsmitelli.com/articles/take-oncall-and-shove-it/>`_
 
 ----
 TODO

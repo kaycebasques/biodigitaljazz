@@ -31,3 +31,4 @@ System theory:
    bookmarks
    contact
    favicons
+   xrp

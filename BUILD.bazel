@@ -1,0 +1,47 @@
+load("@rules_python//sphinxdocs:sphinx.bzl", "sphinx_build_binary", "sphinx_docs")
+load("@rules_python//sphinxdocs:sphinx_docs_library.bzl", "sphinx_docs_library")
+
+sphinx_build_binary(
+    name = "sphinx",
+    deps = [
+        "@pypi//sphinx",
+        "@pypi//sphinx_copybutton",
+        "@pypi//sphinx_reredirects",
+    ]
+)
+
+sphinx_docs_library(
+    name = "sources",
+    srcs = [
+        "_static/base.css",
+        "_static/dark.css",
+        "_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4",
+        "_static/logo.svg",
+        "_templates/layout.html",
+        "asm.rst",
+        "bookmarks.rst",
+        "index.rst",
+        "pcrowdoodle.rst",
+        "rss.xml",
+        "systemantics.rst",
+        "transistor.png",
+        "transistor.rst",
+        "xrp/index.rst",
+        "xrp/notes.rst",
+    ],
+)
+
+sphinx_docs(
+    name = "docs",
+    config = "conf.py",
+    formats = [
+        "html",
+    ],
+    sphinx = ":sphinx",
+    deps = [
+        ":sources",
+    ],
+    extra_opts = [
+        "--fail-on-warning",
+    ],
+)

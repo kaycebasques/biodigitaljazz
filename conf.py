@@ -26,7 +26,7 @@ html_extra_path = ["rss.xml"]
 html_permalinks_icon = "§"
 
 # Extensions
-extensions = ["matplotlib.sphinxext.plot_directive", "sphinx_reredirects"]
+extensions = ["sphinx_copybutton", "sphinx_reredirects"]
 
 # Redirects
 redirects = {

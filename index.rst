@@ -25,10 +25,8 @@ System theory:
    :hidden:
 
    asm
-   transistor
-   systemantics
-   pcrowdoodle
    bookmarks
-   contact
-   favicons
+   pcrowdoodle
+   systemantics
+   transistor
    xrp/index

@@ -1,60 +1,40 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }}</title>
-    <link rel="icon" type="image/png" sizes="any" href="{{ pathto('_static/favicon_512x512', 1) }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/favicon_16x16', 1) }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ pathto('_static/favicon_32x32', 1) }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ pathto('_static/favicon_96x96', 1) }}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ pathto('_static/favicon_192x192', 1) }}">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ pathto('_static/favicon_512x512', 1) }}">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ pathto('_static/favicon_180x180', 1) }}">
-    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/biodigitaljazz.css', 1) }}">
+    <link id="favicon" rel="icon" href="{{ pathto('_static/logo.svg', 1) }}" sizes="any" type="image/svg+xml">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/base.css', 1) }}">
+    <link id="theme" rel="stylesheet" type="text/css" href="{{ pathto('_static/dark.css', 1) }}">
     <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}">
-    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="https://biodigitaljazz.net/rss.xml"/>
+    <link rel="stylesheet" type="text/css" href="{{ pathto('_static/copybutton.css', 1)}}"/>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="manifest" href=" {{ pathto('_static/site.webmanifest', 1) }}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="{{ pathto('_static/clipboard.min.js', 1) }}" async></script>
+    <script src="{{ pathto('_static/copybutton.js', 1) }}" async></script>
+    <script src="{{ pathto('_static/doctools.js', 1) }}"></script>
+    <script src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+    <script src="{{ pathto('_static/sphinx_highlight.js', 1) }}" async></script>
   </head>
-  <body>
+  <body id="body">
     <nav>
       <ul>
+        <li><img src="{{ pathto('_static/logo.svg', 1) }}"/></li>
         <li><a href="{{ pathto('index.html', 1) }}">Home</a></li>
         <li><a href="{{ pathto('rss.xml', 1) }}">RSS</a></li>
-        <li><a href="{{ pathto('bookmarks.html', 1) }}">Bookmarks</a></li>
       </ul>
     </nav>
-    {% block body %}{{ body() }}{% endblock %}
+    <main id="main">
+      {% block body %}{{ body() }}{% endblock %}
+    </main>
     <footer>
-      <p>© 2025 Kayce Basques</p>
-      <p><a href="/_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4">Bio-digital jazz, man</a></p>
+      <p>© 2025 <a href="https://kayce.basqu.es">Kayce Basques</a></p>
+      <p><a href="#body">Jump to top</a></p>
     </footer>
-    <script>
-      // const canvas = document.createElement('canvas');
-      // canvas.width = 16;
-      // canvas.height = 16;
-      // const ctx = canvas.getContext('2d');
-      // document.querySelectorAll('h1, h2, h3, h4, h5').forEach(node => {
-      //   for (let y = 0; y < canvas.height; y++) {
-      //     for (let x = 0; x < canvas.width; x++) {
-      //       const r = Math.floor(Math.random() * 256);
-      //       const g = Math.floor(Math.random() * 256);
-      //       const b = Math.floor(Math.random() * 256);
-      //       ctx.fillStyle = `rgb(${r},${g},${b})`;
-      //       ctx.fillRect(x, y, 1, 1);
-      //     }
-      //   }
-      //   const data = canvas.toDataURL('image/png');
-      //   const img = document.createElement('img');
-      //   img.width = 16;
-      //   img.height = 16;
-      //   img.src = data;
-      //   img.style['margin-end'] = '1em';
-      //   node.prepend(img);
-      // });
-    </script>
   </body>
 </html>

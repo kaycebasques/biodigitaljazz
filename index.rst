@@ -31,4 +31,4 @@ System theory:
    bookmarks
    contact
    favicons
-   xrp
+   xrp/index

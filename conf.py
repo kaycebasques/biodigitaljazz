@@ -23,7 +23,7 @@ exclude_patterns = [
 # Theme
 html_static_path = ["_static"]
 html_extra_path = ["rss.xml"]
-html_permalinks_icon = "#"
+html_permalinks_icon = "§"
 
 # Extensions
 extensions = ["matplotlib.sphinxext.plot_directive", "sphinx_reredirects"]
@@ -43,7 +43,7 @@ redirects = {
 }
 
 # Code
-pygments_style = "sphinx"
+pygments_style = "github-dark"
 
 # matplotlib
 plot_html_show_formats = False

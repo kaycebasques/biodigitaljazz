@@ -1,3 +1,6 @@
+import pathlib
+import sys
+
 # Project
 project = "Bio-digital jazz, man"
 author = "Kayce Basques"
@@ -26,7 +29,8 @@ html_extra_path = ["rss.xml"]
 html_permalinks_icon = "§"
 
 # Extensions
-extensions = ["sphinx_copybutton", "sphinx_reredirects"]
+sys.path.append(str(pathlib.Path("_extensions").resolve()))
+extensions = ["hi", "sphinx_copybutton", "sphinx_reredirects"]
 
 # Redirects
 redirects = {

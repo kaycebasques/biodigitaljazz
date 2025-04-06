@@ -51,9 +51,9 @@ After this I was able to run through ``//XRPExamples/installation_verification.p
 MicroPython
 -----------
 
-Have to do this process to get XRPCode working: https://xrp.discourse.group/t/micropython-error-during-installation-verification/652/7
+* `XRPLib <https://github.com/Open-STEM/XRP_MicroPython>`_
 
-* `Factory reset MicroPython <https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#resetting-flash-memory>`_
+https://github.com/micropython/micropython/tree/master/ports/rp2/boards/SPARKFUN_XRP_CONTROLLER
 
 Bootloader
 ==========
@@ -92,4 +92,31 @@ that `XRP Code`_ puts some wrapper code around your program when it uploads it o
           with open(FILE_PATH, 'r+b') as file:
               file.write(b'\x00')
 
+Servo
+=====
 
+Starts to crap out at ``207``. Why?
+
+`How servo motors work
+<https://www.jameco.com/Jameco/workshop/Howitworks/how-servo-motors-work.html>`_
+
+STAT LED
+========
+
+Not really sure how MicroPython accesses it.
+
+Pico SDK sends SPI command to cyw43-driver to control it. https://github.com/georgerobotics/cyw43-driver
+
+In schematic it's called RADIO_GPIO0
+
+MicroPython seems to call it BOARD_LED or EXT_GPIO0 https://github.com/micropython/micropython/blob/master/ports/rp2/boards/SPARKFUN_XRP_CONTROLLER/pins.csv
+
+Can't find SPI code in MicroPython
+
+Maybe here https://github.com/micropython/micropython/blob/3805e65ed3b7306329bf0305d5b46f08d7619a11/ports/rp2/boards/make-pins.py#L14
+
+Hypothesis: pin mismatch between Pico 2 W and XRP for communicating with CYW43 over SPI
+
+Correct!
+
+Also, they've started adding support in Pico SDK https://github.com/raspberrypi/pico-sdk/blob/develop/src/boards/include/boards/sparkfun_xrp_controller.h

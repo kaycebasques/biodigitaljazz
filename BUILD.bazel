@@ -15,7 +15,7 @@ sphinx_docs_library(
     srcs = [
         "_static/base.css",
         "_static/dark.css",
-        "_static/el-cyber-duderino-if-youre-not-into-that-whole-brevity-thing.mp4",
+        "_static/el-cyber-duderino.mp4",
         "_static/logo.svg",
         "_templates/layout.html",
         "asm.rst",

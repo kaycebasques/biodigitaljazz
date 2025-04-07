@@ -86,3 +86,14 @@ I haven't categorized these yet.
 * `Using Artificial Intelligence to Augment Human Intelligence <https://distill.pub/2017/aia/>`_
 * `Designing for Homo Ludens <https://www.researchgate.net/publication/242529258_Designing_for_Homo_Ludens>`_
 * `The Pleasure and Pain of Speed <https://nautil.us/the-pleasure-and-pain-of-speed-234746/>`_
+* `Cost of C++ abstractions in C++ embedded systems <https://www.youtube.com/watch?v=7gz98K_hCEM>`_
+* `Nine Pico PIO Wats <https://towardsdatascience.com/nine-pico-pio-wats-with-rust-part-1-9d062067dc25/>`_
+* `Embedded platforms overview <https://developerwiki.proventusnova.com/Embedded_Platforms#Embedded_Platforms/Systems_Overview>`_
+* `Rust learning resources 2025 <https://corrode.dev/blog/rust-learning-resources-2025/>`_
+* `Simplified embedded Rust <https://www.theembeddedrustacean.com/c/ser-no-std>`_
+
+.. https://blog.rust-lang.org/2025/02/13/2024-State-Of-Rust-Survey-results.html
+.. https://dev.to/aaravjoshi/master-rust-ffi-building-robust-cross-language-systems-a-complete-guide-4dpo
+.. https://dev.to/carolineee/how-to-optimize-the-power-consumption-of-embedded-systems-4il0
+.. https://www.youtube.com/watch?v=PWwq1oCO6bQ
+.. https://developer.espressif.com/blog/2025/02/rust-esp-hal-beta/

@@ -30,7 +30,7 @@ html_permalinks_icon = "§"
 
 # Extensions
 sys.path.append(str(pathlib.Path("_extensions").resolve()))
-extensions = ["hi", "sphinx_copybutton", "sphinx_reredirects"]
+extensions = ["microdata", "sphinx_copybutton", "sphinx_reredirects"]
 
 # Redirects
 redirects = {

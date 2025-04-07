@@ -6,3 +6,4 @@ Experiential Robotics Platform
    :maxdepth: 1
 
    notes
+   sdk

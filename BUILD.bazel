@@ -13,7 +13,7 @@ sphinx_build_binary(
 sphinx_docs_library(
     name = "sources",
     srcs = [
-        "_extensions/hi.py",
+        "_extensions/microdata.py",
         "_static/base.css",
         "_static/dark.css",
         "_static/el-cyber-duderino.mp4",
@@ -29,6 +29,7 @@ sphinx_docs_library(
         "transistor.rst",
         "xrp/index.rst",
         "xrp/notes.rst",
+        "xrp/sdk.rst",
     ],
 )
 
